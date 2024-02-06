@@ -1,28 +1,52 @@
 <template>
-    <header class="header">
-        <div class="header__container">
-            <a class="header__logo" href="#">
-                <svg class="header__logo-icon">
-                    <use xlink:href="@/assets/sprite.svg#logo"></use>
-                </svg>
-            </a>
-            <nav class="header__navigation">
-                <a class="header__navigation-button" href="#">Home</a>
-                <a class="header__navigation-button" href="#">About Us</a>
-                <a class="header__navigation-button" href="#">White paper</a>
-                <a class="header__navigation-button" href="#">Tokenomics</a>
-                <a class="header__navigation-button" href="#">Road Map</a>
-                <a class="header__navigation-button" href="#">How to buy</a>
-                <a class="header__navigation-button" href="#">Buy</a>
-            </nav>
-        </div>
-    </header>
+  <header class="header">
+    <div class="header__container">
+      <a class="header__logo" href="#">
+        <LogoIcon class="header__logo-icon" />
+      </a>
+      <button
+        :class="{ 'header__burger-btn_active': isMenuOpen }"
+        class="header__burger-btn"
+        @click="openBurgerMenu"
+      >
+        <span></span>
+      </button>
+      <div :class="{ menu_active: isMenuOpen }" class="header__menu menu">
+        <img class="menu__background" :src="MenuBackground" alt="Logo" />
+        <nav class="menu__navigation">
+            <a
+            v-for="(link, index) in links"
+            :key="index"
+            class="menu__navigation-link"
+            :href="link.url"
+          >{{ link.name }}</a>
+        </nav>
+      </div>
+    </div>
+  </header>
 </template>
 
 <script setup>
-    
+import { ref } from "vue";
+import LogoIcon from "@/components/icons/logo.vue";
+import MenuBackground from "@/assets/images/menu-background.jpg";
+
+const isMenuOpen = ref(false);
+const links = [
+  { name: "Home", url: "#" },
+  { name: "About Us", url: "#about" },
+  { name: "White paper", url: "#whitepaper" },
+  { name: "Tokenomics", url: "#tokenomics" },
+  { name: "Road Map", url: "#roadmap" },
+  { name: "How to buy", url: "#howtobuy" },
+  { name: "Buy", url: "#buy" },
+];
+
+function openBurgerMenu() {
+  isMenuOpen.value = !isMenuOpen.value;
+}
 </script>
 
 <style scoped>
- @import '@/scss/components/header.scss';
+@import "@/scss/components/header.scss";
 </style>
