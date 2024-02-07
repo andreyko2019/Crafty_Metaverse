@@ -12,7 +12,11 @@
         <span></span>
       </button>
       <div :class="{ menu_active: isMenuOpen }" class="header__menu menu">
-        <img class="menu__background" :src="MenuBackground" alt="Logo" />
+        <img
+          class="menu__background"
+          src="@/assets/images/menu-background.jpg"
+          alt="Logo"
+        />
         <nav class="menu__navigation">
           <a
             v-for="(link, index) in links"
@@ -30,7 +34,6 @@
 <script setup>
 import { ref } from 'vue'
 import LogoIcon from '@/components/icons/LogoIcon.vue'
-import MenuBackground from '@/assets/images/menu-background.jpg'
 
 const isMenuOpen = ref(false)
 const links = [
