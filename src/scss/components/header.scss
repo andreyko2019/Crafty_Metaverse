@@ -1,9 +1,10 @@
 @import '@/scss/fonts.scss';
-@import "@/scss/mixins.scss";
+@import '@/scss/mixins.scss';
 
 .header {
   position: sticky;
   top: 0;
+
   &__container {
     display: flex;
     align-items: center;
@@ -13,18 +14,18 @@
   &__logo {
     margin: 41px 0;
     z-index: 1000;
+
     &-icon {
-      max-width: 22px;
-      max-height: 22px;
+      max-width: 28px;
+      max-height: 28px;
       width: 100%;
       height: 100%;
       fill: none;
       stroke: white;
-      
     }
   }
 
-  &__burger-btn{
+  &__burger-btn {
     background: none;
     border: none;
     width: 32px;
@@ -36,7 +37,9 @@
     @include for-mobile {
       display: block;
 
-      &::before, &::after, span{
+      &::before,
+      &::after,
+      span {
         position: absolute;
         display: block;
         height: 2px;
@@ -45,57 +48,67 @@
         right: 0;
       }
 
-      &::before, &::after {
-        content: "";
-        transition: transform 0.25s, width 0.25s ease-in-out;
+      &::before,
+      &::after {
+        content: '';
+        transition:
+          transform 0.25s,
+          width 0.25s ease-in-out;
       }
 
-      &::before{
+      &::before {
         width: 100%;
         top: 2px;
       }
 
-      span{
+      span {
         width: 59%;
         top: 50%;
         transform: translate(0, -50%);
-        
       }
-      
-      &::after{
+
+      &::after {
         width: 78%;
         bottom: 2px;
       }
     }
 
-    &_active{
-      span{
+    &_active {
+      span {
         display: none;
-        
       }
 
-      &::before, &::after {
-        max-width: 20px;
+      &::before,
+      &::after {
+        max-width: 30px;
         width: 100%;
-        
       }
 
-      &::before{
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(45deg);
+      &::before {
+        top: 35%;
+        right: 35%;
+        transform: translate(50%, -50%) rotate(45deg);
       }
 
-      &::after{
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(-45deg);
+      &::after {
+        top: 35%;
+        right: 35%;
+        transform: translate(50%, -50%) rotate(-45deg);
       }
     }
   }
 }
 
-.menu{
+@keyframes lineGrow {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.menu {
   &__navigation {
     display: flex;
 
@@ -104,41 +117,43 @@
       margin-top: 8px;
       padding-bottom: 8px;
       color: #fff;
-      font-family: "PlusJakartaSans";
+      font-family: 'PlusJakartaSans';
       font-size: clamp(14px, 1.5vw, 20px);
       font-weight: 500;
+      letter-spacing: 0.01px;
       line-height: 1.4;
       opacity: 0.7;
 
-      &:hover{
-        &::after{
-          content: "";
+      &:hover {
+        &::after {
+          content: '';
           position: absolute;
           bottom: 0;
           left: 0;
           width: 100%;
           height: 2px;
-          background: linear-gradient(0deg, #00DBDE 0%, #00DBDE 100%);
+          background: linear-gradient(0deg, #00dbde 0%, #00dbde 100%);
+          transition: width 0.25s ease-in-out;
+          animation: lineGrow 0.35s ease-in-out forwards;
         }
       }
 
-      &_active{
+      &_active {
         opacity: 1;
 
-        &::after{
-          content: "";
+        &::after {
+          content: '';
           position: absolute;
           bottom: 0;
           left: 0;
           width: 100%;
           height: 2px;
-          background: linear-gradient(0deg, #00DBDE 0%, #00DBDE 100%);
-          transition: transform 0.25s, width 0.25s ease-in-out;
+          background: linear-gradient(0deg, #00dbde 0%, #00dbde 100%);
         }
       }
 
       &:not(:first-child) {
-        margin-left: 45px;
+        margin-left: 43px;
 
         @include for-tablet {
           margin-left: 30px;
@@ -146,6 +161,7 @@
 
         @include for-mobile {
           margin-left: 0px;
+          margin-top: 32px;
         }
       }
 
@@ -156,25 +172,25 @@
     }
 
     @include for-mobile {
-      
       z-index: -1;
       position: relative;
-    flex-direction: column;
-    margin-left: 20px;
-  
-    top: 0px;
-    left: 0px;
-    margin-top: 120px;
-    height:  calc(100vh - 120px);
-    width: auto;
-    overflow-y: auto;
-    overflow-x: hidden;
-    z-index: -1;
+      flex-direction: column;
+      margin-left: 20px;
+
+      top: 0px;
+      left: 0px;
+      margin-top: 100px;
+      padding-top: 32px;
+      padding-bottom: 20px;
+      height: calc(100vh - 152px);
+      width: auto;
+      overflow-y: auto;
+      overflow-x: hidden;
+      z-index: -1;
     }
   }
 
   @include for-mobile {
- 
     position: absolute;
     flex-direction: column;
     display: block;
@@ -186,23 +202,26 @@
     overflow-x: hidden;
     z-index: -1;
     transform: translate(-100%);
+    transition: width 0.5s ease-in-out;
   }
 
-  &__background{
+  &__background {
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
-      display: none;
+    display: none;
+    background-position: 30% 30%;
     @include for-mobile {
       display: block;
     }
   }
 
-  &_active{
+  &_active {
     transform: translate(0);
+    transition: width 0.5s ease-in-out;
   }
 }

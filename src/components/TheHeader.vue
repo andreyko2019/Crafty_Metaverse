@@ -14,12 +14,13 @@
       <div :class="{ menu_active: isMenuOpen }" class="header__menu menu">
         <img class="menu__background" :src="MenuBackground" alt="Logo" />
         <nav class="menu__navigation">
-            <a
+          <a
             v-for="(link, index) in links"
             :key="index"
             class="menu__navigation-link"
             :href="link.url"
-          >{{ link.name }}</a>
+            >{{ link.name }}</a
+          >
         </nav>
       </div>
     </div>
@@ -27,26 +28,26 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-import LogoIcon from "@/components/icons/logo.vue";
-import MenuBackground from "@/assets/images/menu-background.jpg";
+import { ref } from 'vue'
+import LogoIcon from '@/components/icons/LogoIcon.vue'
+import MenuBackground from '@/assets/images/menu-background.jpg'
 
-const isMenuOpen = ref(false);
+const isMenuOpen = ref(false)
 const links = [
-  { name: "Home", url: "#" },
-  { name: "About Us", url: "#about" },
-  { name: "White paper", url: "#whitepaper" },
-  { name: "Tokenomics", url: "#tokenomics" },
-  { name: "Road Map", url: "#roadmap" },
-  { name: "How to buy", url: "#howtobuy" },
-  { name: "Buy", url: "#buy" },
-];
+  { name: 'Home', url: '#' },
+  { name: 'About Us', url: '#about' },
+  { name: 'White paper', url: '#whitepaper' },
+  { name: 'Tokenomics', url: '#tokenomics' },
+  { name: 'Road Map', url: '#roadmap' },
+  { name: 'How to buy', url: '#howtobuy' },
+  { name: 'Buy', url: '#buy' },
+]
 
 function openBurgerMenu() {
-  isMenuOpen.value = !isMenuOpen.value;
+  isMenuOpen.value = !isMenuOpen.value
 }
 </script>
 
 <style scoped>
-@import "@/scss/components/header.scss";
+@import '@/scss/components/header.scss';
 </style>
