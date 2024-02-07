@@ -10,8 +10,8 @@
     margin: 0 auto;
     display: grid;
     grid-template:
-      'globalBlock contactsBlock marqueeBlock' auto/ minmax(260px, 650px)
-      minmax(130px, 230px) minmax(200px, 1040px);
+      'globalBlock contactsBlock marqueeBlock' auto/ minmax(210px, 650px)
+      minmax(50px, 230px) minmax(200px, 1040px);
 
     @include for-mobile {
       grid-template:
@@ -57,8 +57,8 @@
 
     &-element {
       flex: 100%;
-      padding-left: 71px;
-      padding-right: 71px;
+      padding-left: 11px;
+      padding-right: 11px;
       color: $white;
       font-family: 'PlusJakartaSans';
       font-size: 18px;

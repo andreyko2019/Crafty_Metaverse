@@ -1,0 +1,21 @@
+.social-media-section {
+  padding-bottom: 175px;
+  padding-top: 150px;
+
+  &__swiper {
+    margin-top: 79px;
+    align-items: center;
+    max-width: 1128px;
+
+    &-slide {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    max-height: 391px;
+    display: flex;
+    align-items: center;
+  }
+}
