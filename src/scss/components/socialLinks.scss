@@ -1,0 +1,40 @@
+@import '@/scss/vars.scss';
+
+.socialLinks-block {
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48.7px;
+    height: 48.7px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25%;
+    transition: all 0.3s ease;
+
+    &-icon {
+      max-width: 25px;
+      max-height: 25px;
+      width: 100%;
+      height: 100%;
+      fill: $white;
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      transform: scale(1.1);
+    }
+
+    &:active {
+      background-color: rgba(255, 255, 255, 0.15);
+      transform: scale(0.9);
+    }
+
+    &:not(:first-child) {
+      margin-left: 14.61px;
+    }
+  }
+}

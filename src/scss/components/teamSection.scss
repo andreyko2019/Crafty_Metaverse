@@ -1,0 +1,50 @@
+@import '@/scss/mixins.scss';
+
+.team-section {
+  &__container {
+  }
+
+  &__team {
+    display: grid;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 80px;
+    row-gap: 20px;
+
+    &-user {
+      &:nth-child(2) {
+        @include for-laptop {
+          padding-bottom: 111px;
+        }
+      }
+
+      &:nth-child(3) {
+        @include for-laptop {
+          padding-bottom: 111px;
+        }
+      }
+
+      &:last-child {
+        @include for-laptop {
+          padding-bottom: 111px;
+        }
+      }
+
+      &:nth-child(2n) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-self: bottom;
+      }
+    }
+
+    @include for-tablet {
+      grid-template-columns: repeat(2, auto);
+    }
+
+    @include for-mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
