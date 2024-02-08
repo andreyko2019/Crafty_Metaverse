@@ -1,21 +1,56 @@
+@import '@/scss/mixins.scss';
+
 .social-media-section {
   padding-bottom: 175px;
   padding-top: 150px;
+  position: relative;
+
+  @include for-mobile {
+    padding-top: 35px;
+    padding-bottom: 132px;
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 192px);
+    z-index: -1;
+    object-fit: cover;
+  }
 
   &__swiper {
     margin-top: 79px;
-    align-items: center;
-    max-width: 1128px;
+    max-width: 1140px;
+
+    .swiper-wrapper {
+      align-items: center;
+    }
 
     &-slide {
       display: flex;
-      align-items: center;
+      height: 100%;
+      width: fit-content;
+    }
+
+    @include for-mobile {
+      margin-top: 55px;
     }
   }
 
   &__link {
+    display: flex;
     max-height: 391px;
+
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 }
