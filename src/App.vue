@@ -8,10 +8,10 @@
 
 <script setup>
 import Header from '@/components/TheHeader.vue'
-import FAQSection from '@/sections/FAQSection.vue'
-import SocialMediaSection from './sections/SocialMedia.vue'
+import FAQSection from '@/components/FAQSection.vue'
+import SocialMediaSection from '@/components/SocialMedia.vue'
 import Footer from '@/components/TheFooter.vue'
-import TeamSection from './sections/TeamSection.vue'
+import TeamSection from '@/components/TeamSection.vue'
 </script>
 
 <style lang="scss">

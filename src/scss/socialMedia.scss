@@ -5,7 +5,11 @@
   padding-top: 150px;
   position: relative;
 
-  @include for-mobile {
+  &__container {
+    position: relative;
+  }
+
+  @include media-breakpoint-down(sm) {
     padding-top: 35px;
     padding-bottom: 132px;
   }
@@ -34,7 +38,7 @@
       width: fit-content;
     }
 
-    @include for-mobile {
+    @include media-breakpoint-down(sm) {
       margin-top: 55px;
     }
   }
@@ -51,6 +55,44 @@
       width: 100%;
       height: 100%;
       object-fit: contain;
+    }
+  }
+
+  &__blur {
+    position: absolute;
+
+    &-1 {
+      width: 851.178px;
+      height: 704.503px;
+      transform: rotate(-151.293deg);
+      border-radius: 851.178px;
+      opacity: 0.33;
+      background: linear-gradient(96deg, #00dbde 25.39%, #fc00ff 84.84%);
+      filter: blur(218px);
+      left: -100px;
+      top: 0;
+    }
+
+    &-2 {
+      width: 577.485px;
+      height: 625.589px;
+      transform: translate(-50%) rotate(-175.957deg);
+      border-radius: 625.589px;
+      opacity: 0.33;
+      background: linear-gradient(96deg, #00dbde 25.39%, #fc00ff 84.84%);
+      filter: blur(100px);
+      left: 50%;
+      top: 0;
+    }
+
+    &-3 {
+      width: 487.153px;
+      height: 603.71px;
+      border-radius: 603.71px;
+      opacity: 0.45;
+      background: var(--1, linear-gradient(90deg, #00dbde 0%, #fc00ff 100%));
+      filter: blur(218px);
+      right: 0;
     }
   }
 }

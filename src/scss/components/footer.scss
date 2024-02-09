@@ -4,8 +4,9 @@
 .footer {
   margin-top: auto;
   border-top: 1px solid rgba($color: $white, $alpha: 0.6);
-
+  overflow: hidden;
   &__inner {
+    position: relative;
     width: fit-content;
     margin: 0 auto;
     display: grid;
@@ -13,7 +14,7 @@
       'globalBlock contactsBlock marqueeBlock' auto/ minmax(210px, 650px)
       minmax(50px, 230px) minmax(200px, 1040px);
 
-    @include for-mobile {
+    @include media-breakpoint-down(sm) {
       grid-template:
         'globalBlock contactsBlock'
         'marqueeBlock marqueeBlock';
@@ -43,7 +44,7 @@
       line-height: 1.4;
     }
 
-    @include for-mobile {
+    @include media-breakpoint-down(sm) {
       padding-left: 37px;
     }
   }
@@ -86,9 +87,75 @@
     display: flex;
     align-items: center;
 
-    @include for-mobile {
+    @include media-breakpoint-down(sm) {
       border-top: 1px solid rgba($color: $white, $alpha: 0.6);
       border-left: 0;
+    }
+  }
+
+  &__blur {
+    position: absolute;
+    z-index: -1;
+    filter: blur(85px);
+
+    &-1 {
+      width: 789px;
+      height: 238px;
+      background: linear-gradient(114deg, #4462ff 23.53%, #56ffeb 64.93%);
+      bottom: -145%;
+      left: 0%;
+      transform: rotate(-115deg);
+
+      @include media-breakpoint-down(sm) {
+        left: -440px;
+        transform: rotate(160.956deg);
+      }
+    }
+
+    &-2 {
+      width: 335.85px;
+      height: 238.212px;
+      background: #4462ff;
+      bottom: -57%;
+      left: 31%;
+
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+
+    &-3 {
+      width: 857px;
+      height: 246px;
+      background: #4462ff;
+      bottom: -130%;
+      right: 5%;
+      transform: rotate(35deg);
+
+      @include media-breakpoint-down(sm) {
+        transform: rotate(220.956deg);
+        right: -200px;
+        bottom: 0;
+      }
+    }
+
+    &-4 {
+      width: 223px;
+      height: 579px;
+      background: #ff18f6;
+      top: 32%;
+      right: 5%;
+      transform: rotate(-61deg);
+
+      @include media-breakpoint-down(sm) {
+        left: -250px;
+        bottom: -110px;
+      }
+    }
+
+    &-img {
+      width: 100%;
+      height: 100%;
     }
   }
 }

@@ -15,19 +15,19 @@
 
     &-user {
       &:nth-child(2) {
-        @include for-laptop {
+        @include media-breakpoint-up(lg) {
           padding-bottom: 111px;
         }
       }
 
       &:nth-child(3) {
-        @include for-laptop {
+        @include media-breakpoint-up(lg) {
           padding-bottom: 111px;
         }
       }
 
       &:last-child {
-        @include for-laptop {
+        @include media-breakpoint-up(lg) {
           padding-bottom: 111px;
         }
       }
@@ -39,11 +39,11 @@
       }
     }
 
-    @include for-tablet {
+    @include media-breakpoint-down(lg) {
       grid-template-columns: repeat(2, auto);
     }
 
-    @include for-mobile {
+    @include media-breakpoint-down(sm) {
       grid-template-columns: repeat(1, 1fr);
     }
   }

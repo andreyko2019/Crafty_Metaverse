@@ -36,7 +36,7 @@
     position: relative;
     z-index: 1000;
 
-    @include for-mobile {
+    @include media-breakpoint-down(sm) {
       display: block;
 
       &::before,
@@ -157,23 +157,23 @@
       &:not(:first-child) {
         margin-left: 43px;
 
-        @include for-tablet {
+        @include media-breakpoint-down(md) {
           margin-left: 30px;
         }
 
-        @include for-mobile {
+        @include media-breakpoint-down(sm) {
           margin-left: 0px;
           margin-top: 32px;
         }
       }
 
-      @include for-mobile {
+      @include media-breakpoint-down(sm) {
         width: fit-content;
         font-size: 20px;
       }
     }
 
-    @include for-mobile {
+    @include media-breakpoint-down(sm) {
       z-index: -1;
       position: relative;
       flex-direction: column;
@@ -192,7 +192,7 @@
     }
   }
 
-  @include for-mobile {
+  @include media-breakpoint-down(sm) {
     position: absolute;
     flex-direction: column;
     display: block;
@@ -216,7 +216,7 @@
     z-index: -1;
     display: none;
     background-position: 30% 30%;
-    @include for-mobile {
+    @include media-breakpoint-down(sm) {
       display: block;
     }
   }

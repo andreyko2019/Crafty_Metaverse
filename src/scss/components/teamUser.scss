@@ -29,4 +29,10 @@
       margin: 0;
     }
   }
+
+  &:hover {
+    .socialLinks-block {
+      display: flex;
+    }
+  }
 }

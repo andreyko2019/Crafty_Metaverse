@@ -34,6 +34,7 @@
 <script setup>
 import { ref } from 'vue'
 import LogoIcon from '@/components/icons/LogoIcon.vue'
+import { disablePageScroll, enablePageScroll } from 'scroll-lock'
 
 const isMenuOpen = ref(false)
 const links = [
@@ -48,9 +49,14 @@ const links = [
 
 function openBurgerMenu() {
   isMenuOpen.value = !isMenuOpen.value
+  if (isMenuOpen.value) {
+    disablePageScroll()
+  } else {
+    enablePageScroll()
+  }
 }
 </script>
 
-<style scoped>
+<style>
 @import '@/scss/components/header.scss';
 </style>
