@@ -1,0 +1,29 @@
+* {
+  scrollbar-width: 5px;
+  scrollbar-color: rgb(193, 58, 255) #7f5cff;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: white;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow:
+      inset 1px 0 0 #000,
+      inset -1px 0 0 #000;
+    border-radius: 3px;
+    background: #606060;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    border: 0 none #606060;
+    background-color: lighten(yellow, 10%);
+    transition: background-color 280ms ease-in-out;
+
+    &:hover {
+      background-color: yellow;
+    }
+  }
+}

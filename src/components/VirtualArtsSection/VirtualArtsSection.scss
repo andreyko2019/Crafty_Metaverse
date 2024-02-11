@@ -1,0 +1,125 @@
+@import '@/scss/base/mixins.scss';
+
+.virtual-arts-section {
+  overflow: hidden;
+
+  &__container {
+    padding-top: 109px !important;
+    padding-bottom: 127px !important;
+    position: relative;
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: -190px;
+    width: fit-content;
+    height: fit-content;
+    z-index: -1;
+    object-fit: contain;
+  }
+
+  &__text-block {
+    margin-left: auto;
+    position: relative;
+    padding-top: 73px;
+    padding-left: 172px;
+    padding-bottom: 68px;
+    padding-right: 74px;
+    display: grid;
+    grid-template:
+      'title description'
+      'button description' auto/ auto auto;
+    column-gap: 62px;
+    max-width: 1168px;
+    @include media-breakpoint-down(md) {
+      padding-left: 40px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      grid-template:
+        'title'
+        'description'
+        'button';
+    }
+
+    &::before {
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      content: '';
+      width: 6px;
+      height: 100%;
+      border-radius: 62px;
+      background: #7f5cff;
+      box-shadow: 0px 4px 13px 0px rgba(191, 58, 255, 0.44);
+
+      @include media-breakpoint-down(sm) {
+        bottom: 0;
+        width: 100%;
+        height: 6px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+          90deg,
+          rgba(58, 78, 255, 0) 0%,
+          rgba(156, 58, 255, 0.14) 100%
+        ),
+        url('@/assets/images/background-lines.png');
+
+      @include media-breakpoint-down(sm) {
+      }
+    }
+
+    &-title {
+      max-width: 397px;
+      grid-area: title;
+      color: #fff;
+      font-family: 'HeliosExtC';
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 1.425;
+      text-transform: uppercase;
+
+      @include media-breakpoint-down(md) {
+        font-size: 28px;
+      }
+    }
+
+    &-button {
+      grid-area: button;
+      margin-top: 35px;
+      max-width: 176px;
+      color: #fff;
+      font-family: 'PlusJakartaSans';
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    &-description {
+      display: flex;
+      align-items: center;
+      grid-area: description;
+      color: #fff;
+      font-family: 'PlusJakartaSans';
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-top: -15px;
+      letter-spacing: -0.4px;
+
+      @include media-breakpoint-down(md) {
+        margin-top: 12px;
+      }
+    }
+  }
+}

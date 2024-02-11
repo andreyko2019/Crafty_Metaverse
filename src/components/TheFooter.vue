@@ -1,10 +1,12 @@
 <template>
   <footer class="footer">
     <div class="footer__inner">
+      <!--
       <div class="footer__blur footer__blur-1"></div>
       <div class="footer__blur footer__blur-2"></div>
       <div class="footer__blur footer__blur-3"></div>
       <div class="footer__blur footer__blur-4"></div>
+      -->
       <div class="footer__global-block">
         <GlobalIcon class="footer__global-block-icon" />
         <p class="footer__global-block-description">
@@ -15,9 +17,7 @@
         <div class="footer__contacts-block-element">CONTACT</div>
         <div class="footer__contacts-block-element">CONTACT</div>
       </div>
-      <marquee scrolldelay="60" class="footer__marquee-block">
-        info@craftymetaverse.com
-      </marquee>
+      <div class="footer__marquee-block">info</div>
     </div>
   </footer>
 </template>

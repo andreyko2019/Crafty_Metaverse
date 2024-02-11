@@ -1,19 +1,22 @@
 @import '@/scss/vars.scss';
 
 .socialLinks-block {
-  display: flex;
-  justify-content: center;
+  margin-top: 12px;
   display: none;
+  width: fit-content;
+
+  transition: all 0.1s linear;
 
   &__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 48.7px;
-    height: 48.7px;
+    box-sizing: border-box;
+    width: 49px;
+    height: 49px;
     background-color: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 25%;
+    border-radius: 40%;
     transition: all 0.3s ease;
 
     &-icon {

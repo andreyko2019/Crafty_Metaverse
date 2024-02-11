@@ -1,11 +1,13 @@
-@import '@/scss/fonts.scss';
+@import '@/scss/base/fonts.scss';
 @import '@/scss/mixins.scss';
 @import '@/scss/vars.scss';
 
 .header {
   z-index: 1000;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
 
   &__container {
     display: flex;

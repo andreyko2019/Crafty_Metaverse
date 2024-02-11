@@ -1,8 +1,10 @@
 <template>
   <section class="faq-section">
     <div class="faq-section__container">
+      <!--
       <div class="faq-section__blur faq-section__blur-1"></div>
       <div class="faq-section__blur faq-section__blur-2"></div>
+      -->
       <div class="faq-section__background-block">
         <SectionTitle
           class="faq-section__title-block"

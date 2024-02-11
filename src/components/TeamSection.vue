@@ -1,5 +1,10 @@
 <template>
   <section class="team-section">
+    <img
+      class="team-section__background"
+      src="@/assets/images/ourTeam/background.png"
+      alt=""
+    />
     <div class="team-section__container">
       <SectionTitle title="Our Team" titleDescription="WHO WE ARE" />
       <div class="team-section__team">

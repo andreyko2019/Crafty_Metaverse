@@ -6,7 +6,7 @@
       alt="Background"
     />
     <div class="social-media-section__container">
-      <div
+      <!--<div
         class="social-media-section__blur social-media-section__blur-1"
       ></div>
       <div
@@ -15,6 +15,7 @@
       <div
         class="social-media-section__blur social-media-section__blur-3"
       ></div>
+    -->
       <SectionTitle title="Social media" titleDescription="Questions" />
       <Swiper class="social-media-section__swiper" v-bind="swiperOptions">
         <SwiperSlide

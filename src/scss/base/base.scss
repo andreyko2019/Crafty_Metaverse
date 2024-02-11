@@ -1,0 +1,23 @@
+@import './vars.scss';
+@import './scrollbar.scss';
+
+body {
+  background: $black;
+}
+
+[class*='__container'] {
+  max-width: 1675px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.scroll-container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.full-screen {
+  min-height: fit-content;
+  scroll-snap-align: start;
+}

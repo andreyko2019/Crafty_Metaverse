@@ -1,41 +1,136 @@
 @import '@/scss/mixins.scss';
 
 .team-section {
+  position: relative;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
   &__container {
+    padding-top: 143px;
+    padding-bottom: 85px;
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 50px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 100px;
+    }
   }
 
   &__team {
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     justify-content: center;
     width: fit-content;
-    margin: 0 auto;
     grid-template-columns: repeat(4, auto);
     column-gap: 80px;
     row-gap: 20px;
 
+    @include media-breakpoint-down(sm) {
+      padding-top: 19px;
+    }
+
     &-user {
+      height: fit-content;
+      &:first-child {
+        @include media-breakpoint-up(sm) {
+          padding-top: 56px;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       &:nth-child(2) {
-        @include media-breakpoint-up(lg) {
-          padding-bottom: 111px;
+        .team-user__info-name {
+          color: #2c4dff;
+        }
+        @include media-breakpoint-up(sm) {
+          padding-top: 17px;
         }
       }
 
       &:nth-child(3) {
-        @include media-breakpoint-up(lg) {
-          padding-bottom: 111px;
+        .team-user__info-name {
+          color: #bf3aff;
+        }
+
+        @include media-breakpoint-up(sm) {
+          padding-top: 186px;
         }
       }
 
       &:last-child {
-        @include media-breakpoint-up(lg) {
-          padding-bottom: 111px;
+        .team-user__info-name {
+          color: #fb41ff;
+        }
+        @include media-breakpoint-up(sm) {
+          margin-top: 9px;
         }
       }
 
       &:nth-child(2n) {
-        display: flex;
-        flex-direction: column-reverse;
-        align-self: bottom;
+        @include media-breakpoint-up(sm) {
+          display: flex;
+          flex-direction: column-reverse;
+          align-self: bottom;
+        }
+      }
+
+      &:nth-child(2n) {
+        .team-user__info {
+          @include media-breakpoint-up(sm) {
+            padding-top: 61px;
+          }
+          @include media-breakpoint-down(sm) {
+            padding-bottom: 61px;
+          }
+        }
+      }
+
+      &:nth-child(2n - 1) {
+        .team-user__info {
+          padding-bottom: 61px;
+        }
+      }
+
+      &:hover {
+        &:nth-child(2n) {
+          .team-user__info {
+            @include media-breakpoint-up(sm) {
+              padding-top: 0px;
+            }
+            @include media-breakpoint-down(sm) {
+              padding-bottom: 0px;
+            }
+          }
+        }
+
+        &:nth-child(2n - 1) {
+          .team-user__info {
+            padding-bottom: 0px;
+          }
+        }
+
+        .socialLinks-block {
+          display: flex;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 44px;
       }
     }
 

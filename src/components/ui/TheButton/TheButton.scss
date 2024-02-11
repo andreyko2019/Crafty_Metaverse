@@ -1,0 +1,20 @@
+.button {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.56);
+  background: linear-gradient(99deg, #7a42f4 0%, #4642f4 100%), #fff;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(99deg, #9258f4 0%, #5858f4 100%), #fff;
+    border-color: rgba(255, 255, 255, 1);
+  }
+
+  &:active {
+    transform: scale(0.96);
+    transition: transform 0.1s ease;
+  }
+}

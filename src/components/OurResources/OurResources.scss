@@ -1,0 +1,350 @@
+@import '@/scss/base/mixins.scss';
+
+.our-resources-section {
+  padding-top: 91px;
+  padding-bottom: 304px;
+  overflow: hidden;
+
+  &__content {
+    margin-top: 79px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__text-block {
+    position: relative;
+    padding-top: 68px;
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    max-width: 684px;
+    padding-left: 117px;
+
+    @include media-breakpoint-down(lg) {
+      padding-left: 32px;
+    }
+
+    &-logo {
+      text-align: center;
+    }
+
+    &-title {
+      text-align: center;
+      margin-top: 41px;
+      color: #fff;
+      font-family: 'HeliosExtC';
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 1.09;
+      text-transform: uppercase;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 24px;
+      }
+    }
+
+    &-description {
+      margin-top: 27px;
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      font-family: 'Gilroy';
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.6;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 16px;
+      }
+    }
+
+    &-button {
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 70px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 6px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 41px;
+      background: #bf3aff;
+      box-shadow: 0px 0px 17px 0px rgba(191, 58, 255, 0.4);
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 586px;
+    max-height: 530px;
+
+    &-block {
+      margin-right: 150px;
+      margin-bottom: 140px;
+      position: relative;
+      max-width: 971px;
+      max-height: 625px;
+      margin-left: 20px;
+      min-width: 350px;
+
+      @include media-breakpoint-down(lg) {
+        margin-right: 0;
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-left: 0;
+        min-width: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+.image-info-block {
+  position: absolute;
+  width: 100%;
+
+  display: flex;
+  opacity: 0.7;
+
+  &__item {
+    margin-left: 10px;
+    max-width: 201px;
+
+    @include media-breakpoint-down(lg) {
+      max-width: 120px;
+    }
+  }
+
+  &__info-title,
+  &__info-value {
+    display: inline-block;
+    color: white;
+    font-family: 'Gilroy';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 12px;
+    }
+  }
+
+  &__info-title {
+    margin-right: 5px;
+  }
+
+  &__elips-button {
+    position: relative;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    border: 1px solid #56ffeb;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid #56ffeb;
+      width: 75%;
+      height: 75%;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: #56ffeb;
+      width: 24%;
+      height: 24%;
+      border-radius: 50%;
+    }
+
+    @include media-breakpoint-down(lg) {
+      max-width: 31px;
+      min-width: 31px;
+      max-height: 31px;
+      min-height: 31px;
+    }
+  }
+
+  &-1 {
+    top: 13%;
+    left: 19.4%;
+
+    .image-info-block__elips-button {
+      border-color: #9d71ff;
+
+      &::before,
+      &::after {
+        border-color: #9d71ff;
+      }
+
+      &::after {
+        background: #9d71ff;
+      }
+    }
+  }
+
+  &-2 {
+    top: 36%;
+    left: 84%;
+
+    @include media-breakpoint-down(lg) {
+      text-align: right;
+      left: 54%;
+      flex-direction: row-reverse;
+      width: fit-content;
+
+      .image-info-block__info-list {
+        margin-left: 0;
+        margin-right: 10px;
+      }
+    }
+
+    .image-info-block__elips-button {
+      border-color: #ff4de3;
+
+      &::before,
+      &::after {
+        border-color: #ff4de3;
+      }
+
+      &::after {
+        background: #ff4de3;
+      }
+    }
+  }
+
+  &-3 {
+    top: 78%;
+    left: 85.6%;
+
+    @include media-breakpoint-down(lg) {
+      text-align: right;
+      left: 54%;
+      flex-direction: row-reverse;
+      width: fit-content;
+
+      .image-info-block__info-list {
+        margin-left: 0;
+        margin-right: 10px;
+      }
+    }
+
+    .image-info-block__elips-button {
+      border-color: #ff388c;
+
+      &::before,
+      &::after {
+        border-color: #ff388c;
+      }
+
+      &::after {
+        background: #ff388c;
+      }
+    }
+  }
+
+  &-4 {
+    top: 98%;
+    left: 2%;
+
+    flex-direction: column;
+
+    .image-info-block__item {
+      margin-top: 22px;
+      margin-left: 5px;
+
+      @include media-breakpoint-down(lg) {
+        margin-top: 12px;
+        margin-left: 5px;
+      }
+    }
+
+    .image-info-block__elips-button {
+      border-color: #56ffeb;
+
+      &::before,
+      &::after {
+        border-color: #56ffeb;
+      }
+
+      &::after {
+        background: #56ffeb;
+      }
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+
+    .image-info-block__elips-button {
+      animation: rotate 2s linear infinite;
+
+      &::before {
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      &::after {
+        animation: innerPulse 2s ease-in-out infinite;
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    width: 75%;
+    height: 75%;
+  }
+  50% {
+    width: 85%;
+    height: 85%;
+  }
+  100% {
+    width: 75%;
+    height: 75%;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes innerPulse {
+  0% {
+    width: 24%;
+    height: 24%;
+  }
+  50% {
+    width: 34%;
+    height: 34%;
+  }
+  100% {
+    width: 24%;
+    height: 24%;
+  }
+}
