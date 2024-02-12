@@ -1,25 +1,27 @@
 <template>
-  <section class="faq-section">
+  <section class="faq-section" id="howtobuy">
     <div class="faq-section__container">
       <!--
       <div class="faq-section__blur faq-section__blur-1"></div>
       <div class="faq-section__blur faq-section__blur-2"></div>
       -->
       <div class="faq-section__background-block">
-        <SectionTitle
-          class="faq-section__title-block"
-          titleDescription="Questions"
-          title="FAQ"
-        />
-        <div class="faq-section__accordeons-list">
-          <FAQAccordeon
-            v-for="(item, index) in faqAccordeonsList"
-            :key="index"
-            :item="item"
-            :index="index"
-            :isOpen="openIndex === index"
-            @update:open="openIndex = $event === openIndex ? null : $event"
+        <div class="faq-section__background-block-border">
+          <SectionTitle
+            class="faq-section__title-block"
+            titleDescription="Questions"
+            title="FAQ"
           />
+          <div class="faq-section__accordeons-list">
+            <FAQAccordeon
+              v-for="(item, index) in faqAccordeonsList"
+              :key="index"
+              :item="item"
+              :index="index"
+              :isOpen="openIndex === index"
+              @update:open="openIndex = $event === openIndex ? null : $event"
+            />
+          </div>
         </div>
       </div>
     </div>

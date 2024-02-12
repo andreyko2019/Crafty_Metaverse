@@ -8,7 +8,7 @@
     <div class="about-us-section__container">
       <div class="about-us-section__text-block">
         <p class="about-us-section__text-block-sub-title">Profile</p>
-        <h2 class="about-us-section__text-block-title">About Us</h2>
+        <h2 class="about-us-section__text-block-title" id="about">About Us</h2>
         <p class="about-us-section__text-block-description">
           CYou are using the old write up. We are using this now. Crafty
           Metaverse is a multi-blockchain based virtual reality metaverse

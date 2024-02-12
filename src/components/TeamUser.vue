@@ -1,5 +1,5 @@
 <template>
-  <div class="team-user">
+  <div class="team-user" tabindex="0">
     <div class="team-user__img-container">
       <img class="team-user__img" :src="imageUrl" :alt="props.name" />
     </div>

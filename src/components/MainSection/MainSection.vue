@@ -7,7 +7,9 @@
     />
     <div class="main-section__container">
       <div class="main-section__text-block">
-        <p class="main-section__text-block-sub-title">Crafty Metaverse</p>
+        <p class="main-section__text-block-sub-title" id="home">
+          Crafty Metaverse
+        </p>
         <h1 class="main-section__text-block-title">
           A SHARED, IMMERSIVE MULTI-BLOCKCHAIN BASED METAVERSE ECOSYSTEM
         </h1>

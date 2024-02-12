@@ -1,5 +1,5 @@
 <template>
-  <section class="explore-now-section">
+  <section class="explore-now-section" id="buy">
     <div class="explore-now-section__container">
       <div class="explore-now-section__text-block" :style="backgroundStyle">
         <h2 class="explore-now-section__text-block-title">Explore Now</h2>

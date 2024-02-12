@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header" :class="{ 'header--scrolled': isScrolled }">
     <div class="header__container">
       <a class="header__logo" href="#">
         <LogoIcon class="header__logo-icon" />
@@ -32,13 +32,13 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { onMounted, onUnmounted, ref } from 'vue'
 import LogoIcon from '@/components/icons/LogoIcon.vue'
 import { disablePageScroll, enablePageScroll } from 'scroll-lock'
 
 const isMenuOpen = ref(false)
 const links = [
-  { name: 'Home', url: '#' },
+  { name: 'Home', url: '#home' },
   { name: 'About Us', url: '#about' },
   { name: 'White paper', url: '#whitepaper' },
   { name: 'Tokenomics', url: '#tokenomics' },
@@ -55,6 +55,18 @@ function openBurgerMenu() {
     enablePageScroll()
   }
 }
+
+const updateScroll = () => {
+  isScrolled.value = window.scrollY > 0
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', updateScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', updateScroll)
+})
 </script>
 
 <style>

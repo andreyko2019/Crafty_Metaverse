@@ -37,6 +37,12 @@
         'button';
     }
 
+    @include media-breakpoint-down(sm) {
+      padding-top: 53px;
+      padding-left: 20px;
+      padding-right: 5px;
+    }
+
     &-title {
       grid-area: title;
       color: white;
@@ -45,6 +51,10 @@
       font-weight: 700;
       line-height: 1.09;
       text-transform: uppercase;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 28px;
+      }
     }
 
     &-description,
@@ -55,6 +65,12 @@
       font-weight: 400;
       line-height: 1.6;
       max-width: 397px;
+      margin-top: 20px;
+      letter-spacing: -0.3px;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 16px;
+      }
     }
 
     &-description-2 {
@@ -64,12 +80,22 @@
 
     &-description {
       grid-area: description;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 16px;
+      }
     }
 
     &-button {
       grid-area: button;
       margin-top: 39px;
       max-width: 176px;
+      font-size: 18px;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 38px;
+        letter-spacing: 0.6px;
+      }
     }
 
     &::before {

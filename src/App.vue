@@ -4,8 +4,10 @@
     <MainSection />
     <AboutUsSection class="full-screen" />
     <div class="full-screen">
+      <RoadMapSection />
       <OurBrands />
       <OurResources />
+      <GameSection />
       <ExploreNowSection />
       <VirtualArtsSection />
       <TeamSection />
@@ -28,6 +30,8 @@ import OurBrands from './components/OurBrands/OurBrands.vue'
 import OurResources from './components/OurResources/OurResources.vue'
 import ExploreNowSection from '@/components/ExploreNowSection/ExploreNowSection.vue'
 import VirtualArtsSection from './components/VirtualArtsSection/VirtualArtsSection.vue'
+import RoadMapSection from './components/RoadMapSection/RoadMapSection.vue'
+import GameSection from './components/GameSection/GameSection.vue'
 </script>
 
 <style lang="scss">

@@ -1,0 +1,15 @@
+.roadmap-section {
+  padding-top: 219px;
+  padding-bottom: 211px;
+
+  &__list {
+    margin-top: 75px;
+    width: 100%;
+  }
+
+  &__element {
+    &:nth-child(2n) {
+      margin-left: auto;
+    }
+  }
+}

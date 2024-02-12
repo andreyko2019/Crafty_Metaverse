@@ -17,7 +17,11 @@
         <div class="footer__contacts-block-element">CONTACT</div>
         <div class="footer__contacts-block-element">CONTACT</div>
       </div>
-      <div class="footer__marquee-block">info</div>
+      <div class="footer__marquee-block">
+        <div class="footer__marquee">
+          <span>info@craftymetaverse.com</span>
+        </div>
+      </div>
     </div>
   </footer>
 </template>

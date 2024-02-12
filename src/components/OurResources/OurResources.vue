@@ -1,5 +1,5 @@
 <template>
-  <section class="our-resources-section">
+  <section class="our-resources-section" id="tokenomics">
     <div class="our-resources-section__container">
       <SectionTitle title="Our resources" titleDescription="What we do" />
       <div class="our-resources-section__content">

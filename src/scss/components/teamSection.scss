@@ -1,6 +1,8 @@
 @import '@/scss/mixins.scss';
 
 .team-section {
+  padding-top: 148px;
+
   position: relative;
 
   &__background {
@@ -68,6 +70,10 @@
         }
 
         @include media-breakpoint-up(sm) {
+          padding-top: 40px;
+        }
+
+        @include media-breakpoint-up(lg) {
           padding-top: 186px;
         }
       }
@@ -106,16 +112,19 @@
         }
       }
 
-      &:hover {
-        &:nth-child(2n) {
-          .team-user__info {
-            @include media-breakpoint-up(sm) {
-              padding-top: 0px;
-            }
-            @include media-breakpoint-down(sm) {
-              padding-bottom: 0px;
-            }
-          }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      &:focus-within {
+        .socialLinks-block {
+          display: flex;
+          animation: fadeIn 0.5s ease-in-out forwards;
         }
 
         &:nth-child(2n - 1) {
@@ -124,8 +133,10 @@
           }
         }
 
-        .socialLinks-block {
-          display: flex;
+        &:nth-child(2n) {
+          .team-user__info {
+            padding-top: 0px;
+          }
         }
       }
 
