@@ -1,11 +1,26 @@
 <template>
   <section class="our-resources-section" id="tokenomics">
     <div class="our-resources-section__container">
-      <SectionTitle title="Our resources" titleDescription="What we do" />
-      <div class="our-resources-section__content">
-        <div class="our-resources-section__text-block" :style="backgroundStyle">
+      <div class="our-resources-section__blur our-resources-section__blur-1">
+        <img
+          src="@/assets/images/OurResourcesSection/blur-1.svg"
+          loading="lazy"
+          alt="Blur"
+        />
+      </div>
+      <SectionTitle
+        title="Our resources"
+        data-aos="fade-up"
+        titleDescription="What we do"
+      />
+      <div class="our-resources-section__content" data-aos="fade-left">
+        <div class="our-resources-section__text-block">
           <div class="our-resources-section__text-block-logo">
-            <Logo2Icon />
+            <img
+              src="@/assets/images/OurResourcesSection/Logo2.webp"
+              loading="lazy"
+              alt="Logo"
+            />
           </div>
           <h2 class="our-resources-section__text-block-title">
             About toKen $Cmeta
@@ -23,7 +38,8 @@
         <div class="our-resources-section__image-block">
           <img
             class="our-resources-section__image"
-            src="@/assets/images/OurResources/tokenImage.png"
+            src="@/assets/images/OurResourcesSection/tokenImage.webp"
+            loading="lazy"
             alt=""
           />
           <div
@@ -87,17 +103,9 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
 import SectionTitle from '@/components/SectionTitle.vue'
 import TheButton from '@/components/ui/TheButton/TheButton.vue'
 import Logo2Icon from '@/components/icons/Logo2Icon.vue'
-import BackgroundLines from '@/assets/images/background-lines.png'
-
-const imageUrl = ref(BackgroundLines)
-
-const backgroundStyle = computed(() => ({
-  backgroundImage: `url(${imageUrl.value})`,
-}))
 </script>
 
 <style>

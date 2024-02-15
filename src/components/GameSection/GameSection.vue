@@ -2,16 +2,18 @@
   <section class="game-section" id="whitepaper">
     <img
       class="game-section__background"
-      src="@/assets/images/GameSection/background.jpg"
+      src="@/assets/images/GameSection/background.webp"
+      loading="lazy"
       alt="Background"
     />
     <img
       class="game-section__background_mobile"
-      src="@/assets/images/GameSection/backgroundMobile.jpg"
+      src="@/assets/images/GameSection/backgroundMobile.webp"
+      loading="lazy"
       alt="Background"
     />
     <div class="game-section__container">
-      <div class="game-section__text-block">
+      <div class="game-section__text-block" data-aos="zoom-in-up">
         <h2 class="game-section__text-block-title">Game</h2>
         <p class="game-section__text-block-description">
           The space will also offer avid gamers to be a part of an amazing 3D
@@ -24,11 +26,19 @@
         </p>
         <TheButton class="game-section__text-block-button" text="Invest Now" />
       </div>
-      <div class="game-section__npc-1">
-        <img src="@/assets/images/GameSection/npc-1.png" alt="Npc" />
+      <div class="game-section__npc-1" data-aos="fade-up-right">
+        <img
+          src="@/assets/images/GameSection/npc-1.webp"
+          loading="lazy"
+          alt="Npc"
+        />
       </div>
-      <div class="game-section__npc-2">
-        <img src="@/assets/images/GameSection/npc-2.png" alt="Npc" />
+      <div class="game-section__npc-2" data-aos="fade-left">
+        <img
+          src="@/assets/images/GameSection/npc-2.webp"
+          loading="lazy"
+          alt="Npc"
+        />
       </div>
     </div>
   </section>

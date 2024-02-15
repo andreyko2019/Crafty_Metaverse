@@ -1,11 +1,13 @@
 <template>
   <section class="faq-section" id="howtobuy">
     <div class="faq-section__container">
-      <!--
-      <div class="faq-section__blur faq-section__blur-1"></div>
-      <div class="faq-section__blur faq-section__blur-2"></div>
-      -->
-      <div class="faq-section__background-block">
+      <div class="faq-section__blur faq-section__blur-1">
+        <img src="@/assets/images/FAQSection/blur-1.svg" alt="Blur" />
+      </div>
+      <div class="faq-section__blur faq-section__blur-2">
+        <img src="@/assets/images/FAQSection/blur-2.svg" alt="Blur" />
+      </div>
+      <div class="faq-section__background-block" data-aos="fade-right">
         <div class="faq-section__background-block-border">
           <SectionTitle
             class="faq-section__title-block"

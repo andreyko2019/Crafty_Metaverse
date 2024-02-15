@@ -19,7 +19,7 @@
     </div>
     <div class="roadmap-component__text-block">
       <h3 class="roadmap-component__text-block-title">
-        Governance Token Launch on BSC ($CMETA)
+        {{ props.roadmapItem.title }}
       </h3>
       <transition-group
         tag="ul"

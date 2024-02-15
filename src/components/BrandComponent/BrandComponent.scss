@@ -1,3 +1,5 @@
+@import '@/scss/base/mixins.scss';
+
 .brand-component {
   display: flex;
   flex-direction: column;
@@ -6,7 +8,11 @@
 
   &__text-block {
     position: relative;
-    margin-top: 41px;
+    margin-top: 66px;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 54px;
+    }
 
     &-title {
       color: #fff;
@@ -17,6 +23,16 @@
       line-height: 1.4;
       text-transform: uppercase;
       margin-top: 46px;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 31px;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
     &-description {
@@ -28,6 +44,12 @@
       font-weight: 300;
       line-height: 1.6;
       letter-spacing: 0.18px;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 15px;
+        max-width: 100%;
+        letter-spacing: -0.3px;
+      }
     }
 
     &::before {
@@ -56,6 +78,22 @@
         rgba(56, 219, 255, 0.14) 0.58%,
         rgba(56, 219, 255, 0) 42.57%
       );
+    }
+  }
+
+  &:nth-child(2) {
+    .brand-component__text-block {
+      &::before {
+        background: #7b71ee;
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    .brand-component__text-block {
+      &::before {
+        background: #f00afe;
+      }
     }
   }
 }

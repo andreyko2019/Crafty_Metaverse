@@ -1,9 +1,20 @@
+@import '@/scss/base/mixins.scss';
+
 .our-brands-section {
   position: relative;
   padding-top: 112px;
   padding-bottom: 129px;
-
   background-repeat: repeat;
+  background-color: rgba(9, 8, 18, 1);
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 71px;
+    padding-bottom: 60px;
+  }
+
+  &__container {
+    position: relative;
+  }
 
   &__background {
     position: absolute;
@@ -18,10 +29,62 @@
   }
 
   &__cards {
+    max-width: 1350px;
     margin-top: 90px;
     display: flex;
     justify-content: space-between;
     align-items: top;
     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include media-breakpoint-down(lg) {
+      justify-content: center;
+      gap: 43px;
+      margin-top: 75px;
+    }
+
+    .brand-component {
+      &:nth-child(2) {
+        .brand-component__text-block {
+          margin-top: 70px;
+        }
+      }
+
+      &:nth-child(3) {
+        margin-top: 5px;
+        .brand-card {
+          margin-right: 15px;
+        }
+
+        .brand-component__text-block {
+          margin-top: 63px;
+        }
+      }
+    }
+  }
+
+  &__blur {
+    position: absolute;
+
+    &-1 {
+      top: -100px;
+      left: -50px;
+    }
+
+    &-2 {
+      top: 0;
+      left: 400px;
+    }
+
+    &-3 {
+      top: 0;
+      left: 500px;
+    }
+
+    &-4 {
+      top: 0;
+      left: 900px;
+    }
   }
 }

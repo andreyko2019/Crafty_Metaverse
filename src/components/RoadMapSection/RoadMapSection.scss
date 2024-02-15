@@ -1,15 +1,190 @@
+@import '@/scss/base/mixins.scss';
+
 .roadmap-section {
   padding-top: 219px;
-  padding-bottom: 211px;
+  padding-bottom: 220px;
+
+  &__container {
+    position: relative;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 90px;
+    padding-bottom: 160px;
+  }
 
   &__list {
-    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1310px;
+    margin-top: 66px;
     width: 100%;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 20px;
+    }
   }
 
   &__element {
+    &:nth-child(1) {
+      margin-left: 25px;
+      max-width: 540px;
+
+      @include media-breakpoint-down(sm) {
+        max-width: 540px;
+        width: 100%;
+        width: fit-content;
+      }
+
+      .roadmap-component__circle {
+        top: 22px;
+        right: -19px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        margin-left: 0px;
+        margin-top: 99px;
+
+        .roadmap-component__circle {
+          top: -50px;
+          right: 38px;
+          width: 93px;
+          height: 93px;
+        }
+      }
+
+      .roadmap-component__text-block-title {
+        max-width: 248px;
+        letter-spacing: -0.2px;
+      }
+    }
+
+    &:nth-child(2) {
+      max-width: 460px;
+      margin-top: 80px;
+
+      @include media-breakpoint-down(sm) {
+        max-width: 375px;
+        width: 100%;
+        width: fit-content;
+      }
+
+      @include media-breakpoint-down(xs) {
+        margin-top: 117px;
+      }
+
+      .roadmap-component__circle {
+        left: -170px;
+
+        @include media-breakpoint-down(xs) {
+          top: -85px;
+          left: 41px;
+          width: 93px;
+          height: 93px;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      margin-top: 80px;
+      max-width: 420px;
+
+      @include media-breakpoint-down(sm) {
+        max-width: 540px;
+        width: 100%;
+        width: fit-content;
+      }
+
+      @include media-breakpoint-down(xs) {
+        .roadmap-component__text-block-title {
+          max-width: 248px;
+          letter-spacing: -0.2px;
+          margin-left: 5px;
+        }
+      }
+
+      .roadmap-component__circle {
+        top: 15px;
+        right: -140px;
+
+        @include media-breakpoint-down(xs) {
+          top: -85px;
+          right: 41px;
+          width: 93px;
+          height: 93px;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      margin-top: 81px;
+      max-width: 405px;
+      margin-right: 13px;
+
+      @include media-breakpoint-down(sm) {
+        max-width: 350px;
+        width: 100%;
+        width: fit-content;
+      }
+
+      @include media-breakpoint-down(xs) {
+        margin-top: 149px;
+        padding-left: 5px;
+      }
+
+      .roadmap-component__circle {
+        top: 25px;
+        left: -170px;
+
+        @include media-breakpoint-down(xs) {
+          top: -100px;
+          left: 23px;
+          width: 93px;
+          height: 93px;
+        }
+      }
+    }
+
     &:nth-child(2n) {
       margin-left: auto;
+
+      .roadmap-component__circle {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  &__blur {
+    position: absolute;
+
+    &-1 {
+      top: -400px;
+      left: -950px;
+    }
+
+    &-2 {
+      top: 100px;
+      right: -700px;
+    }
+
+    &-3 {
+      top: -70px;
+      left: 390px;
+    }
+
+    &-4 {
+      top: 480px;
+      left: 600px;
+    }
+
+    &-5 {
+      top: 1000px;
+      left: 300px;
+    }
+
+    &-6 {
+      top: 1460px;
+      left: 610px;
     }
   }
 }

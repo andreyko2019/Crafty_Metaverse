@@ -1,9 +1,13 @@
 <template>
-  <section class="virtual-arts-section">
+  <section
+    class="virtual-arts-section"
+    data-aos="fade-up"
+    data-aos-duration="3000"
+  >
     <div class="virtual-arts-section__container">
       <img
         class="virtual-arts-section__background"
-        src="@/assets/images/VirtualArtsSection/virtuaImage.png"
+        src="@/assets/images/VirtualArtsSection/virtuaImage.webp"
         alt="Background"
       />
       <div class="virtual-arts-section__text-block">

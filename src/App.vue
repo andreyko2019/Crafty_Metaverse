@@ -1,37 +1,37 @@
 <template>
   <Header></Header>
-  <div class="scroll-container">
-    <MainSection />
-    <AboutUsSection class="full-screen" />
-    <div class="full-screen">
-      <RoadMapSection />
-      <OurBrands />
-      <OurResources />
-      <GameSection />
-      <ExploreNowSection />
-      <VirtualArtsSection />
-      <TeamSection />
-      <FAQSection />
-      <SocialMediaSection />
-      <Footer></Footer>
-    </div>
-  </div>
+  <MainSection />
+  <AboutUsSection />
+  <RoadMapSection />
+  <OurBrands />
+  <OurResources />
+  <Marquee />
+  <GameSection />
+  <ExploreNowSection />
+  <VirtualArtsSection />
+  <TeamSection />
+  <Marquee-2 />
+  <FAQSection />
+  <SocialMediaSection />
+  <Footer></Footer>
 </template>
 
 <script setup>
+import MainSection from './components/MainSection/MainSection.vue'
 import Header from '@/components/TheHeader.vue'
+import AboutUsSection from './components/AboutUsSection/AboutUsSection.vue'
+import RoadMapSection from './components/RoadMapSection/RoadMapSection.vue'
+import OurBrands from './components/OurBrands/OurBrands.vue'
+import OurResources from './components/OurResources/OurResources.vue'
+import Marquee from './components/Marquee/Marquee.vue'
+import GameSection from './components/GameSection/GameSection.vue'
+import ExploreNowSection from '@/components/ExploreNowSection/ExploreNowSection.vue'
+import VirtualArtsSection from './components/VirtualArtsSection/VirtualArtsSection.vue'
+import TeamSection from '@/components/TeamSection.vue'
+import Marquee2 from './components/Marquee/Marquee-2.vue'
 import FAQSection from '@/components/FAQSection.vue'
 import SocialMediaSection from '@/components/SocialMedia.vue'
 import Footer from '@/components/TheFooter.vue'
-import TeamSection from '@/components/TeamSection.vue'
-import MainSection from './components/MainSection/MainSection.vue'
-import AboutUsSection from './components/AboutUsSection/AboutUsSection.vue'
-import OurBrands from './components/OurBrands/OurBrands.vue'
-import OurResources from './components/OurResources/OurResources.vue'
-import ExploreNowSection from '@/components/ExploreNowSection/ExploreNowSection.vue'
-import VirtualArtsSection from './components/VirtualArtsSection/VirtualArtsSection.vue'
-import RoadMapSection from './components/RoadMapSection/RoadMapSection.vue'
-import GameSection from './components/GameSection/GameSection.vue'
 </script>
 
 <style lang="scss">

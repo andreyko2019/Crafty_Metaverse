@@ -1,4 +1,5 @@
 @import '@/scss/vars.scss';
+@import '@/scss/base/mixins.scss';
 
 .team-user {
   width: fit-content;
@@ -33,6 +34,14 @@
       font-weight: 700;
       line-height: 1.4;
       text-transform: uppercase;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 4px;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 4px;
     }
   }
 }

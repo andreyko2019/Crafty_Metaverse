@@ -2,9 +2,28 @@
 @import '@/scss/base/mixins.scss';
 
 .about-us-section {
-  height: 100vh;
+  background: rgba(1, 0, 31, 1);
+  padding-top: 268px;
+  padding-bottom: 205px;
   position: relative;
   display: flex;
+  overflow: hidden;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 0;
+    padding-bottom: 77px;
+    flex-direction: column;
+  }
+
+  &__blur-1 {
+    display: none;
+    @include media-breakpoint-down(sm) {
+      position: absolute;
+      display: block;
+      bottom: -150px;
+      right: -310px;
+    }
+  }
 
   &__background {
     position: absolute;
@@ -13,7 +32,14 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
-    z-index: -1;
+
+    @include media-breakpoint-down(sm) {
+      position: relative;
+      width: 100%;
+      top: 0;
+      height: 386px;
+      object-position: 68.5% 10%;
+    }
   }
 
   &__container {
@@ -24,15 +50,33 @@
 
   &__text-block {
     position: relative;
-    padding-top: 70px;
+    padding-top: 46px;
     padding-bottom: 10px;
-    max-width: 673px;
-    padding-left: 61px;
+    max-width: 703px;
+    padding-left: 68px;
+    background-image: url('@/assets/images/background-lines.png');
 
     @include media-breakpoint-down(sm) {
-      max-width: 350px;
-      padding-left: 24px;
-      padding-top: 14px;
+      margin-top: 58px;
+      max-width: 90vw;
+      padding-left: 31px;
+      padding-top: 15px;
+      padding-bottom: 3px;
+    }
+
+    &-swiper {
+      width: 100%;
+      margin-top: 30px;
+      margin-left: -4px;
+      max-width: 620px;
+      padding-bottom: 50px;
+
+      &-slide {
+        @include media-breakpoint-down(sm) {
+          margin-top: 22px;
+          padding-left: 3px;
+        }
+      }
     }
 
     &::before {
@@ -62,7 +106,7 @@
     }
 
     &-title {
-      margin-top: 16px;
+      margin-top: 13px;
       color: $white;
       font-family: 'HeliosExtC';
       font-size: 45px;
@@ -72,22 +116,86 @@
 
       @include media-breakpoint-down(sm) {
         font-size: 28px;
-        margin-top: 20px;
+        margin-top: 15px;
+        margin-left: -3px;
       }
     }
 
     &-description {
-      margin-top: 27px;
       color: $white;
       font-family: 'PlusJakartaSans';
       font-size: 20px;
       font-weight: 400;
       line-height: 1.6;
+      letter-spacing: -0.32px;
 
       @include media-breakpoint-down(sm) {
         font-size: 16px;
-        margin-top: 45px;
+        line-height: 1.62;
+        letter-spacing: -0.3px;
+        padding-left: 2px;
+        margin-top: -2px;
       }
     }
+  }
+}
+
+.swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal {
+  position: relative;
+  margin-top: 76px;
+  margin-left: 22px;
+  max-width: 400px;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 35px;
+  }
+
+  .swiper-pagination__title,
+  .swiper-pagination__title-2 {
+    position: absolute;
+    color: #fff;
+    font-family: 'HeliosExtC';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.45;
+    text-transform: uppercase;
+  }
+
+  .swiper-pagination__title {
+    left: -21px;
+    top: 24px;
+  }
+
+  .swiper-pagination__title-2 {
+    top: 24px;
+    right: 18px;
+  }
+
+  &::before {
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #7f5cff;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid #7f5cff;
+    transform: translate(-50%, -50%);
+  }
+
+  .swiper-pagination-progressbar-fill {
+    background-color: #7f5cff;
   }
 }

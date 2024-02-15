@@ -1,9 +1,32 @@
 <template>
   <section class="roadmap-section" id="roadmap">
     <div class="roadmap-section__container">
-      <SectionTitle title="Roadmap" titleDescription="Our Way" />
+      <div class="roadmap-section__blur roadmap-section__blur-1">
+        <img src="@/assets/images/RoadMapSection/blur-1.svg" alt="Blur" />
+      </div>
+      <div class="roadmap-section__blur roadmap-section__blur-2">
+        <img src="@/assets/images/RoadMapSection/blur-2.svg" alt="Blur" />
+      </div>
+      <div class="roadmap-section__blur roadmap-section__blur-3">
+        <img src="@/assets/images/RoadMapSection/circle-1.svg" alt="Blur" />
+      </div>
+      <div class="roadmap-section__blur roadmap-section__blur-4">
+        <img src="@/assets/images/RoadMapSection/circle-2.svg" alt="Blur" />
+      </div>
+      <div class="roadmap-section__blur roadmap-section__blur-5">
+        <img src="@/assets/images/RoadMapSection/circle-3.svg" alt="Blur" />
+      </div>
+      <div class="roadmap-section__blur roadmap-section__blur-6">
+        <img src="@/assets/images/RoadMapSection/circle-4.svg" alt="Blur" />
+      </div>
+      <SectionTitle
+        title="Roadmap"
+        titleDescription="Our Way"
+        data-aos="fade-up"
+      />
       <div class="roadmap-section__list">
         <RoadMapComponent
+          data-aos="zoom-in"
           v-for="(item, index) in roadmapItems"
           class="roadmap-section__element"
           :roadmapItem="item"

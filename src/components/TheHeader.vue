@@ -1,12 +1,13 @@
 <template>
   <header class="header" :class="{ 'header--scrolled': isScrolled }">
     <div class="header__container">
-      <a class="header__logo" href="#">
+      <a class="header__logo" href="#" aria-label="Home">
         <LogoIcon class="header__logo-icon" />
       </a>
       <button
         :class="{ 'header__burger-btn_active': isMenuOpen }"
         class="header__burger-btn"
+        aria-label="Burger Menu"
         @click="openBurgerMenu"
       >
         <span></span>
@@ -32,7 +33,7 @@
 </template>
 
 <script setup>
-import { onMounted, onUnmounted, ref } from 'vue'
+import { ref } from 'vue'
 import LogoIcon from '@/components/icons/LogoIcon.vue'
 import { disablePageScroll, enablePageScroll } from 'scroll-lock'
 
@@ -55,18 +56,6 @@ function openBurgerMenu() {
     enablePageScroll()
   }
 }
-
-const updateScroll = () => {
-  isScrolled.value = window.scrollY > 0
-}
-
-onMounted(() => {
-  window.addEventListener('scroll', updateScroll)
-})
-
-onUnmounted(() => {
-  window.removeEventListener('scroll', updateScroll)
-})
 </script>
 
 <style>

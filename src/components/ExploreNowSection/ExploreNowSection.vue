@@ -1,7 +1,10 @@
 <template>
-  <section class="explore-now-section" id="buy">
+  <section class="explore-now-section" data-aos="zoom-out-left" id="buy">
     <div class="explore-now-section__container">
-      <div class="explore-now-section__text-block" :style="backgroundStyle">
+      <div class="explore-now-section__blur explore-now-section__blur-1">
+        <img src="@/assets/images/OurTeamSection/blur-1.svg" alt="Blur" />
+      </div>
+      <div class="explore-now-section__text-block">
         <h2 class="explore-now-section__text-block-title">Explore Now</h2>
         <p class="explore-now-section__text-block-description-2">
           Each human will control his/her own digital identity in the Crafty
@@ -21,8 +24,9 @@
       <div class="explore-now-section__image-block">
         <img
           class="explore-now-section__image"
-          src="@/assets/images/ExploreNowSection/exploreImage.png"
-          alt=""
+          src="@/assets/images/ExploreNowSection/exploreImage.webp"
+          loading="lazy"
+          alt="Explore"
         />
       </div>
     </div>
@@ -30,19 +34,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
 import TheButton from '@/components/ui/TheButton/TheButton.vue'
-import BackgroundLines from '@/assets/images/background-lines.png'
-
-const imageUrl = ref(BackgroundLines)
-
-const backgroundStyle = computed(() => ({
-  backgroundImage: `linear-gradient(
-                      -90deg, 
-                      rgba(58, 78, 255, 0) 0%, 
-                      rgba(156, 58, 255, 0.14) 100%
-                    ), url(${imageUrl.value})`,
-}))
 </script>
 
 <style>
