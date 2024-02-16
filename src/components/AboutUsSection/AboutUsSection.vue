@@ -9,7 +9,7 @@
       <div class="about-us-section__blur-1">
         <img src="@/assets/images/AboutUsSection/blur-1.svg" alt="Blur" />
       </div>
-      <div class="about-us-section__text-block" data-aos="fade-up">
+      <div class="about-us-section__text-block">
         <p class="about-us-section__text-block-sub-title">Profile</p>
         <h2 class="about-us-section__text-block-title">About Us</h2>
         <Swiper
@@ -53,11 +53,11 @@
 </template>
 
 <script setup>
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import SwiperCore, { Pagination } from 'swiper'
-import 'swiper/swiper-bundle.css'
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import SwiperCore, { Pagination } from 'swiper';
+import 'swiper/swiper-bundle.css';
 
-SwiperCore.use([Pagination])
+SwiperCore.use([Pagination]);
 
 const swiperOptions = {
   pagination: {
@@ -66,7 +66,7 @@ const swiperOptions = {
     slidesPerView: '1',
     allowTouchMove: true,
   },
-}
+};
 </script>
 
 <style>

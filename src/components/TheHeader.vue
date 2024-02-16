@@ -33,11 +33,11 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import LogoIcon from '@/components/icons/LogoIcon.vue'
-import { disablePageScroll, enablePageScroll } from 'scroll-lock'
+import { ref } from 'vue';
+import LogoIcon from '@/components/icons/LogoIcon.vue';
+import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
-const isMenuOpen = ref(false)
+const isMenuOpen = ref(false);
 const links = [
   { name: 'Home', url: '#home' },
   { name: 'About Us', url: '#about' },
@@ -46,14 +46,14 @@ const links = [
   { name: 'Road Map', url: '#roadmap' },
   { name: 'How to buy', url: '#howtobuy' },
   { name: 'Buy', url: '#buy' },
-]
+];
 
 function openBurgerMenu() {
-  isMenuOpen.value = !isMenuOpen.value
+  isMenuOpen.value = !isMenuOpen.value;
   if (isMenuOpen.value) {
-    disablePageScroll()
+    disablePageScroll();
   } else {
-    enablePageScroll()
+    enablePageScroll();
   }
 }
 </script>

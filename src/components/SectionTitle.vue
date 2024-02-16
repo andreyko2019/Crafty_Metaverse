@@ -9,7 +9,7 @@
 const props = defineProps({
   titleDescription: String,
   title: String,
-})
+});
 </script>
 
 <style scoped>

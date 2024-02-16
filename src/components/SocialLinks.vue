@@ -19,17 +19,17 @@
 </template>
 
 <script setup>
-import FacebookIcon from '@/components/icons/FacebookIcon.vue'
-import TwitterIcon from '@/components/icons/TwitterIcon.vue'
-import InstagramIcon from '@/components/icons/InstagramIcon.vue'
-import LinkedinIcon from '@/components/icons/LinkedinIcon.vue'
+import FacebookIcon from '@/components/icons/FacebookIcon.vue';
+import TwitterIcon from '@/components/icons/TwitterIcon.vue';
+import InstagramIcon from '@/components/icons/InstagramIcon.vue';
+import LinkedinIcon from '@/components/icons/LinkedinIcon.vue';
 
 const props = defineProps({
   facebookLink: String,
   twitterLink: String,
   instagramLink: String,
   linkedinLink: String,
-})
+});
 </script>
 
 <style scoped>

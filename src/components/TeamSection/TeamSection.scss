@@ -18,6 +18,7 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    background-color: rgba(10, 1, 23, 1);
   }
 
   &__container {
@@ -174,18 +175,19 @@
 
   &__blur {
     position: absolute;
+    z-index: -1;
 
-    &-1 {
+    &:nth-child(1) {
       top: -150px;
-      left: -570px;
+      left: -1070px;
     }
 
-    &-2 {
-      top: -500px;
-      right: -200px;
+    &:nth-child(2) {
+      top: -200px;
+      left: -400px;
     }
 
-    &-3 {
+    &:nth-child(3) {
       top: -700px;
       right: -500px;
     }

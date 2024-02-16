@@ -8,12 +8,8 @@
           alt="Blur"
         />
       </div>
-      <SectionTitle
-        title="Our resources"
-        data-aos="fade-up"
-        titleDescription="What we do"
-      />
-      <div class="our-resources-section__content" data-aos="fade-left">
+      <SectionTitle title="Our resources" titleDescription="What we do" />
+      <div class="our-resources-section__content">
         <div class="our-resources-section__text-block">
           <div class="our-resources-section__text-block-logo">
             <img
@@ -103,9 +99,9 @@
 </template>
 
 <script setup>
-import SectionTitle from '@/components/SectionTitle.vue'
-import TheButton from '@/components/ui/TheButton/TheButton.vue'
-import Logo2Icon from '@/components/icons/Logo2Icon.vue'
+import SectionTitle from '@/components/SectionTitle.vue';
+import TheButton from '@/components/ui/TheButton/TheButton.vue';
+import Logo2Icon from '@/components/icons/Logo2Icon.vue';
 </script>
 
 <style>

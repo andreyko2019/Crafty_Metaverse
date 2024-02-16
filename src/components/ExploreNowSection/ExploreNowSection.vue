@@ -1,8 +1,8 @@
 <template>
-  <section class="explore-now-section" data-aos="zoom-out-left" id="buy">
+  <section class="explore-now-section" id="buy">
     <div class="explore-now-section__container">
       <div class="explore-now-section__blur explore-now-section__blur-1">
-        <img src="@/assets/images/OurTeamSection/blur-1.svg" alt="Blur" />
+        <img src="@/assets/images/ExploreNowSection/blur-1.svg" alt="Blur" />
       </div>
       <div class="explore-now-section__text-block">
         <h2 class="explore-now-section__text-block-title">Explore Now</h2>
@@ -34,7 +34,7 @@
 </template>
 
 <script setup>
-import TheButton from '@/components/ui/TheButton/TheButton.vue'
+import TheButton from '@/components/ui/TheButton/TheButton.vue';
 </script>
 
 <style>

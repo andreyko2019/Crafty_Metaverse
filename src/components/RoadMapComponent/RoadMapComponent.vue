@@ -1,6 +1,9 @@
 <template>
   <div class="roadmap-component">
     <div class="roadmap-component__circle">
+      <div class="roadmap-section__blur roadmap-section__blur-3">
+        <img :src="roadmapItem.blurSrc" alt="Blur" />
+      </div>
       <div
         class="roadmap-component__circle-first roadmap-component__circle-animation"
       ></div>
@@ -76,47 +79,48 @@
 </template>
 
 <script setup>
-import { ref, defineProps } from 'vue'
-import ListIcon from '../icons/ListIcon.vue'
-import ArrowIcon from '../icons/ArrowIcon.vue'
+import { ref, defineProps } from 'vue';
+import ListIcon from '../icons/ListIcon.vue';
+import ArrowIcon from '../icons/ArrowIcon.vue';
 
 const props = defineProps({
   roadmapItem: Object,
-})
+});
 
 const visibleItemElements = ref(
-  props.roadmapItem.defaultQuantityVisibleElements
-)
-const showingAll = ref(false)
+  props.roadmapItem.defaultQuantityVisibleElements,
+);
+const showingAll = ref(false);
 
 function toggleVisibility() {
   if (showingAll.value) {
-    visibleItemElements.value = props.roadmapItem.defaultQuantityVisibleElements
-    showingAll.value = false
+    visibleItemElements.value =
+      props.roadmapItem.defaultQuantityVisibleElements;
+    showingAll.value = false;
   } else {
-    visibleItemElements.value = props.roadmapItem.list.length
-    showingAll.value = true
+    visibleItemElements.value = props.roadmapItem.list.length;
+    showingAll.value = true;
   }
 }
 
 function beforeEnter(el) {
-  el.style.height = '0'
+  el.style.height = '0';
 }
 
 function enter(el, done) {
-  el.style.transition = 'height 0.3s ease'
-  el.style.height = el.scrollHeight + 'px'
-  el.addEventListener('transitionend', done)
+  el.style.transition = 'height 0.3s ease';
+  el.style.height = el.scrollHeight + 'px';
+  el.addEventListener('transitionend', done);
 }
 
 function beforeLeave(el) {
-  el.style.height = el.scrollHeight + 'px'
+  el.style.height = el.scrollHeight + 'px';
 }
 
 function leave(el, done) {
-  el.style.transition = 'height 0.3s ease'
-  el.style.height = '0'
-  el.addEventListener('transitionend', done)
+  el.style.transition = 'height 0.3s ease';
+  el.style.height = '0';
+  el.addEventListener('transitionend', done);
 }
 </script>
 

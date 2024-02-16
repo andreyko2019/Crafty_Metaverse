@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-import SocialLinks from './SocialLinks.vue'
+import SocialLinks from './SocialLinks.vue';
 
 const props = defineProps({
   position: String,
@@ -27,7 +27,7 @@ const props = defineProps({
   instagramLink: String,
   linkedinLink: String,
   imageUrl: Object,
-})
+});
 </script>
 
 <style scoped>

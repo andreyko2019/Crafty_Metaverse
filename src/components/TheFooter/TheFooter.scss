@@ -5,6 +5,7 @@
   margin-top: auto;
   border-top: 1px solid rgba($color: $white, $alpha: 0.6);
   overflow: hidden;
+
   &__inner {
     position: relative;
     width: fit-content;
@@ -97,8 +98,9 @@
 
   @keyframes marquee {
     from {
-      transform: translateX(100%);
+      transform: translateX(0%);
     }
+
     to {
       transform: translateX(-100%);
     }
@@ -109,15 +111,13 @@
     align-items: center;
     width: 100%;
     background: none;
-    color: #333;
+    color: $darkGray;
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
 
-    span {
-      display: inline-block;
-      padding-left: 100%;
-      animation: marquee 15s linear infinite;
+    a {
+      color: $white;
     }
   }
 
@@ -147,28 +147,28 @@
     position: absolute;
     filter: blur(85px);
 
-    &-1 {
+    &:nth-child(1) {
       top: -30px;
       left: -170px;
       width: 100%;
       height: 100%;
     }
 
-    &-2 {
+    &:nth-child(2) {
       top: 30px;
       left: 400px;
       width: 100%;
       height: 100%;
     }
 
-    &-3 {
+    &:nth-child(3) {
       top: 60px;
       left: 550px;
       width: 100%;
       height: 100%;
     }
 
-    &-4 {
+    &:nth-child(4) {
       top: 30px;
       left: 1050px;
       width: 100%;
@@ -179,5 +179,13 @@
       width: 100%;
       height: 100%;
     }
+  }
+}
+
+.footer__marquee.animated {
+  span {
+    padding-left: 20px;
+    display: inline-block;
+    animation: marquee 10s linear infinite;
   }
 }

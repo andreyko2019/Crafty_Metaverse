@@ -7,7 +7,7 @@
       alt="Background"
     />
     <div class="main-section__container">
-      <div class="main-section__text-block" data-aos="fade-right">
+      <div class="main-section__text-block">
         <p class="main-section__text-block-sub-title">Crafty Metaverse</p>
         <h1 class="main-section__text-block-title">
           A SHARED, IMMERSIVE MULTI-BLOCKCHAIN BASED
@@ -29,8 +29,8 @@
 </template>
 
 <script setup>
-import TheButton from '@/components/ui/TheButton/TheButton.vue'
-import StarIcon from '@/components/icons/StarIcon.vue'
+import TheButton from '@/components/ui/TheButton/TheButton.vue';
+import StarIcon from '@/components/icons/StarIcon.vue';
 </script>
 
 <style>

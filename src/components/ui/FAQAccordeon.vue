@@ -16,18 +16,18 @@
 </template>
 
 <script setup>
-import { defineProps, defineEmits } from 'vue'
+import { defineProps, defineEmits } from 'vue';
 
 const props = defineProps({
   item: Object,
   index: Number,
   isOpen: Boolean,
-})
-const emit = defineEmits(['update:open'])
+});
+const emit = defineEmits(['update:open']);
 
 const toggle = () => {
-  emit('update:open', props.index)
-}
+  emit('update:open', props.index);
+};
 </script>
 
 <style>

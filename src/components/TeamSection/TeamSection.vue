@@ -2,37 +2,33 @@
   <section class="team-section">
     <img
       class="team-section__background"
-      src="@/assets/images/OurTeamSection/background.png"
+      src="@/assets/images/TeamSection/background.png"
       alt=""
     />
     <div class="team-section__container">
-      <div class="team-section__blur team-section__blur-1">
+      <div class="team-section__blur">
         <img
-          src="@/assets/images/OurTeamSection/blur-1.svg"
+          src="@/assets/images/TeamSection/blur-1.webp"
           loading="lazy"
           alt="Blur"
         />
       </div>
-      <div class="team-section__blur team-section__blur-2">
+      <div class="team-section__blur">
         <img
-          src="@/assets/images/OurTeamSection/blur-2.svg"
+          src="@/assets/images/TeamSection/blur-2.webp"
           loading="lazy"
           alt="Blur"
         />
       </div>
-      <div class="team-section__blur team-section__blur-3">
+      <div class="team-section__blur">
         <img
-          src="@/assets/images/OurTeamSection/blur-3.svg"
+          src="@/assets/images/TeamSection/blur-3.webp"
           loading="lazy"
           alt="Blur"
         />
       </div>
-      <SectionTitle
-        title="Our Team"
-        titleDescription="WHO WE ARE"
-        data-aos="fade-up"
-      />
-      <div class="team-section__team" data-aos="fade-right">
+      <SectionTitle title="Our Team" titleDescription="WHO WE ARE" />
+      <div class="team-section__team">
         <TeamUser
           class="team-section__team-user"
           position="CTO/Creative Director"
@@ -79,18 +75,18 @@
 </template>
 
 <script setup>
-import SectionTitle from '@/components/SectionTitle.vue'
-import TeamUser from '@/components/TeamUser.vue'
-import User1 from '@/assets/images/OurTeamSection/User1.webp'
-import User2 from '@/assets/images/OurTeamSection/User2.webp'
-import User3 from '@/assets/images/OurTeamSection/User3.webp'
-import User4 from '@/assets/images/OurTeamSection/User4.webp'
+import SectionTitle from '@/components/SectionTitle.vue';
+import TeamUser from '@/components/TeamUser.vue';
+import User1 from '@/assets/images/TeamSection/User1.webp';
+import User2 from '@/assets/images/TeamSection/User2.webp';
+import User3 from '@/assets/images/TeamSection/User3.webp';
+import User4 from '@/assets/images/TeamSection/User4.webp';
 const props = defineProps({
   titleDescription: String,
   title: String,
-})
+});
 </script>
 
 <style>
-@import '@/scss/components/teamSection.scss';
+@import './TeamSection.scss';
 </style>

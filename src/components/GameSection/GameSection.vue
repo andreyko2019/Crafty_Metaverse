@@ -13,7 +13,7 @@
       alt="Background"
     />
     <div class="game-section__container">
-      <div class="game-section__text-block" data-aos="zoom-in-up">
+      <div class="game-section__text-block">
         <h2 class="game-section__text-block-title">Game</h2>
         <p class="game-section__text-block-description">
           The space will also offer avid gamers to be a part of an amazing 3D
@@ -26,14 +26,14 @@
         </p>
         <TheButton class="game-section__text-block-button" text="Invest Now" />
       </div>
-      <div class="game-section__npc-1" data-aos="fade-up-right">
+      <div class="game-section__npc-1">
         <img
           src="@/assets/images/GameSection/npc-1.webp"
           loading="lazy"
           alt="Npc"
         />
       </div>
-      <div class="game-section__npc-2" data-aos="fade-left">
+      <div class="game-section__npc-2">
         <img
           src="@/assets/images/GameSection/npc-2.webp"
           loading="lazy"
@@ -45,7 +45,7 @@
 </template>
 
 <script setup>
-import TheButton from '@/components/ui/TheButton/TheButton.vue'
+import TheButton from '@/components/ui/TheButton/TheButton.vue';
 </script>
 
 <style>

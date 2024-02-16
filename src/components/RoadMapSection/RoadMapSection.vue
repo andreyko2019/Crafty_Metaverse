@@ -7,26 +7,9 @@
       <div class="roadmap-section__blur roadmap-section__blur-2">
         <img src="@/assets/images/RoadMapSection/blur-2.svg" alt="Blur" />
       </div>
-      <div class="roadmap-section__blur roadmap-section__blur-3">
-        <img src="@/assets/images/RoadMapSection/circle-1.svg" alt="Blur" />
-      </div>
-      <div class="roadmap-section__blur roadmap-section__blur-4">
-        <img src="@/assets/images/RoadMapSection/circle-2.svg" alt="Blur" />
-      </div>
-      <div class="roadmap-section__blur roadmap-section__blur-5">
-        <img src="@/assets/images/RoadMapSection/circle-3.svg" alt="Blur" />
-      </div>
-      <div class="roadmap-section__blur roadmap-section__blur-6">
-        <img src="@/assets/images/RoadMapSection/circle-4.svg" alt="Blur" />
-      </div>
-      <SectionTitle
-        title="Roadmap"
-        titleDescription="Our Way"
-        data-aos="fade-up"
-      />
+      <SectionTitle title="Roadmap" titleDescription="Our Way" />
       <div class="roadmap-section__list">
         <RoadMapComponent
-          data-aos="zoom-in"
           v-for="(item, index) in roadmapItems"
           class="roadmap-section__element"
           :roadmapItem="item"
@@ -37,13 +20,18 @@
 </template>
 
 <script setup>
-import SectionTitle from '@/components/SectionTitle.vue'
-import RoadMapComponent from '../RoadMapComponent/RoadMapComponent.vue'
+import SectionTitle from '@/components/SectionTitle.vue';
+import RoadMapComponent from '../RoadMapComponent/RoadMapComponent.vue';
+import BlurCircle1 from '@/assets/images/RoadMapSection/circle-1.svg';
+import BlurCircle2 from '@/assets/images/RoadMapSection/circle-2.svg';
+import BlurCircle3 from '@/assets/images/RoadMapSection/circle-3.svg';
+import BlurCircle4 from '@/assets/images/RoadMapSection/circle-4.svg';
 
 const roadmapItems = [
   {
     defaultQuantityVisibleElements: 6,
     title: 'Governance Token Launch on BSC ($CMETA)',
+    blurSrc: BlurCircle1,
     list: [
       {
         event: 'Launch Date: Jan 8th, 2022 Contract Audit',
@@ -83,6 +71,7 @@ const roadmapItems = [
   {
     defaultQuantityVisibleElements: 5,
     title: 'CMETA Ecosystem Begins',
+    blurSrc: BlurCircle2,
     list: [
       {
         event: 'CMETA Staking Release',
@@ -118,6 +107,7 @@ const roadmapItems = [
   {
     defaultQuantityVisibleElements: 3,
     title: 'Guardians of Lost Worlds Released to Public (PC)',
+    blurSrc: BlurCircle3,
     list: [
       {
         event: 'Implement In-Game Staking ($KOFA Rewards)',
@@ -139,6 +129,7 @@ const roadmapItems = [
   {
     defaultQuantityVisibleElements: 2,
     title: 'SANKOFA Mainnet Launch',
+    blurSrc: BlurCircle4,
     list: [
       {
         event: ' Migrate Guardians of Lost Worlds to SANKOFA Sidechain',
@@ -155,7 +146,7 @@ const roadmapItems = [
       },
     ],
   },
-]
+];
 </script>
 
 <style>

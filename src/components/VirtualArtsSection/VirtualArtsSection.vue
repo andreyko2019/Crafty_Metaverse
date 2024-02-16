@@ -1,9 +1,5 @@
 <template>
-  <section
-    class="virtual-arts-section"
-    data-aos="fade-up"
-    data-aos-duration="3000"
-  >
+  <section class="virtual-arts-section">
     <div class="virtual-arts-section__container">
       <img
         class="virtual-arts-section__background"
@@ -28,7 +24,7 @@
 </template>
 
 <script setup>
-import TheButton from '@/components/ui/TheButton/TheButton.vue'
+import TheButton from '@/components/ui/TheButton/TheButton.vue';
 </script>
 
 <style>

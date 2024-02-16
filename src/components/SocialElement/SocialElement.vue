@@ -15,14 +15,14 @@
 </template>
 
 <script setup>
-import SocialLayout from '@/components/icons/SocialLayout.vue'
+import SocialLayout from '@/components/icons/SocialLayout.vue';
 
 const props = defineProps({
   layoutComponent: Object,
   iconComponent: Object,
   socialName: String,
   color: String,
-})
+});
 </script>
 
 <style scoped>
