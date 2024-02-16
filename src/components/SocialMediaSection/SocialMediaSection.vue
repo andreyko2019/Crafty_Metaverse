@@ -47,65 +47,65 @@
 </template>
 
 <script setup>
-import TwitterImage from '@/assets/images/SocialMediaSection/Twitter.webp';
-import TelegramImage from '@/assets/images/SocialMediaSection/Telegram.webp';
-import YoutubeImage from '@/assets/images/SocialMediaSection/YouTube.webp';
-import DiscordImage from '@/assets/images/SocialMediaSection/Discord.webp';
-import TwitterMobileImage from '@/assets/images/SocialMediaSection/TwitterMobile.webp';
-import TelegramMobileImage from '@/assets/images/SocialMediaSection/TelegramMobile.webp';
-import YoutubeMobileImage from '@/assets/images/SocialMediaSection/YouTubeMobile.webp';
-import DiscordMobileImage from '@/assets/images/SocialMediaSection/DiscordMobile.webp';
-import Blur1 from '@/assets/images/SocialMediaSection/blur-1.webp';
-import Blur2 from '@/assets/images/SocialMediaSection/blur-2.webp';
-import Blur3 from '@/assets/images/SocialMediaSection/blur-3.webp';
-import SectionTitle from '@/components/SectionTitle.vue';
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/swiper-bundle.css';
+  import TwitterImage from '@/assets/images/SocialMediaSection/Twitter.webp'
+  import TelegramImage from '@/assets/images/SocialMediaSection/Telegram.webp'
+  import YoutubeImage from '@/assets/images/SocialMediaSection/YouTube.webp'
+  import DiscordImage from '@/assets/images/SocialMediaSection/Discord.webp'
+  import TwitterMobileImage from '@/assets/images/SocialMediaSection/TwitterMobile.webp'
+  import TelegramMobileImage from '@/assets/images/SocialMediaSection/TelegramMobile.webp'
+  import YoutubeMobileImage from '@/assets/images/SocialMediaSection/YouTubeMobile.webp'
+  import DiscordMobileImage from '@/assets/images/SocialMediaSection/DiscordMobile.webp'
+  import Blur1 from '@/assets/images/SocialMediaSection/blur-1.webp'
+  import Blur2 from '@/assets/images/SocialMediaSection/blur-2.webp'
+  import Blur3 from '@/assets/images/SocialMediaSection/blur-3.webp'
+  import SectionTitle from '@/components/SectionTitle.vue'
+  import { Swiper, SwiperSlide } from 'swiper/vue'
+  import 'swiper/swiper-bundle.css'
 
-const swiperOptions = {
-  initialSlide: 0,
-  breakpoints: {
-    0: {
-      slidesPerView: 'auto',
-      allowTouchMove: true,
+  const swiperOptions = {
+    initialSlide: 0,
+    breakpoints: {
+      0: {
+        slidesPerView: 'auto',
+        allowTouchMove: true,
+      },
+      1024: {
+        slidesPerView: 4,
+        allowTouchMove: false,
+      },
     },
-    1024: {
-      slidesPerView: 4,
-      allowTouchMove: false,
+  }
+
+  const blurImages = [Blur1, Blur2, Blur3]
+
+  const socialMediaPlatforms = [
+    {
+      name: 'Twitter',
+      url: 'https://twitter.com/',
+      imgSrc: TwitterImage,
+      mobileImgSrc: TwitterMobileImage,
     },
-  },
-};
-
-const blurImages = [Blur1, Blur2, Blur3];
-
-const socialMediaPlatforms = [
-  {
-    name: 'Twitter',
-    url: 'https://twitter.com/',
-    imgSrc: TwitterImage,
-    mobileImgSrc: TwitterMobileImage,
-  },
-  {
-    name: 'Telegram',
-    url: 'https://web.telegram.org/',
-    imgSrc: TelegramImage,
-    mobileImgSrc: TelegramMobileImage,
-  },
-  {
-    name: 'YouTube',
-    url: 'https://www.youtube.com/',
-    imgSrc: YoutubeImage,
-    mobileImgSrc: YoutubeMobileImage,
-  },
-  {
-    name: 'Discord',
-    url: 'https://discord.com/',
-    imgSrc: DiscordImage,
-    mobileImgSrc: DiscordMobileImage,
-  },
-];
+    {
+      name: 'Telegram',
+      url: 'https://web.telegram.org/',
+      imgSrc: TelegramImage,
+      mobileImgSrc: TelegramMobileImage,
+    },
+    {
+      name: 'YouTube',
+      url: 'https://www.youtube.com/',
+      imgSrc: YoutubeImage,
+      mobileImgSrc: YoutubeMobileImage,
+    },
+    {
+      name: 'Discord',
+      url: 'https://discord.com/',
+      imgSrc: DiscordImage,
+      mobileImgSrc: DiscordMobileImage,
+    },
+  ]
 </script>
 
 <style lang="scss">
-@import './SocialMediaSection.scss';
+  @import './SocialMediaSection.scss';
 </style>

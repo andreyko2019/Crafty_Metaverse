@@ -8,7 +8,9 @@
           alt="Blur"
         />
       </div>
+
       <SectionTitle title="Our resources" titleDescription="What we do" />
+
       <div class="our-resources-section__content">
         <div class="our-resources-section__text-block">
           <div class="our-resources-section__text-block-logo">
@@ -18,19 +20,23 @@
               alt="Logo"
             />
           </div>
+
           <h2 class="our-resources-section__text-block-title">
             About toKen $Cmeta
           </h2>
+
           <p class="our-resources-section__text-block-description">
             CMETA, a BSC-based cryptocurrency token will be the sole governance
             token on the platform. This means that every single transaction in
             the Crafty Metaverse space will be conducted with the $CMETA token
           </p>
+
           <TheButton
             class="our-resources-section__text-block-button"
             text="Play (Coming Soon)"
           />
         </div>
+
         <div class="our-resources-section__image-block">
           <img
             class="our-resources-section__image"
@@ -38,56 +44,72 @@
             loading="lazy"
             alt=""
           />
+
           <div
             class="our-resources-section__image-info-block image-info-block image-info-block-1"
           >
             <div class="image-info-block__elips-button"></div>
+
             <div class="image-info-block__info-list">
               <div class="image-info-block__item">
                 <div class="image-info-block__info-title">
                   Circulating Supply:
                 </div>
+
                 <div class="image-info-block__info-value">1,000,000,000</div>
               </div>
             </div>
           </div>
+
           <div
             class="our-resources-section__image-info-block image-info-block image-info-block-2"
           >
             <div class="image-info-block__elips-button"></div>
+
             <div class="image-info-block__info-list">
               <div class="image-info-block__item">
                 <div class="image-info-block__info-title">Maximum supply:</div>
+
                 <div class="image-info-block__info-value">1,000,000,000</div>
               </div>
             </div>
           </div>
+
           <div
             class="our-resources-section__image-info-block image-info-block image-info-block-3"
           >
             <div class="image-info-block__elips-button"></div>
+
             <div class="image-info-block__info-list">
               <div class="image-info-block__item">
                 <div class="image-info-block__info-title">Tax:</div>
+
                 <div class="image-info-block__info-value">10%</div>
               </div>
+
               <div class="image-info-block__item">
                 <div class="image-info-block__info-title">Marketing:</div>
+
                 <div class="image-info-block__info-value">5%</div>
               </div>
+
               <div class="image-info-block__item">
                 <div class="image-info-block__info-title">Development:</div>
+
                 <div class="image-info-block__info-value">5%</div>
               </div>
             </div>
           </div>
+
           <div
             class="our-resources-section__image-info-block image-info-block image-info-block-4"
           >
             <div class="image-info-block__elips-button"></div>
+
             <div class="image-info-block__info-list">
               <div class="image-info-block__item">
                 <div class="image-info-block__info-title">Token symbol:</div>
+
                 <div class="image-info-block__info-value">$CMETA</div>
               </div>
             </div>
@@ -99,11 +121,10 @@
 </template>
 
 <script setup>
-import SectionTitle from '@/components/SectionTitle.vue';
-import TheButton from '@/components/ui/TheButton/TheButton.vue';
-import Logo2Icon from '@/components/icons/Logo2Icon.vue';
+  import SectionTitle from '@/components/SectionTitle.vue'
+  import TheButton from '@/components/ui/TheButton/TheButton.vue'
 </script>
 
 <style>
-@import './OurResources.scss';
+  @import url('./OurResources.scss');
 </style>

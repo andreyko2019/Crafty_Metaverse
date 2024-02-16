@@ -12,6 +12,7 @@
         fill="#A0FFF4"
       />
     </g>
+
     <defs>
       <filter
         id="filter0_df_160_250"
@@ -23,30 +24,38 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
           result="hardAlpha"
         />
+
         <feOffset />
+
         <feGaussianBlur stdDeviation="5" />
+
         <feComposite in2="hardAlpha" operator="out" />
+
         <feColorMatrix
           type="matrix"
           values="0 0 0 0 0.627451 0 0 0 0 1 0 0 0 0 0.956863 0 0 0 0.9 0"
         />
+
         <feBlend
           mode="normal"
           in2="BackgroundImageFix"
           result="effect1_dropShadow_160_250"
         />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
           in2="effect1_dropShadow_160_250"
           result="shape"
         />
+
         <feGaussianBlur
           stdDeviation="0.5"
           result="effect2_foregroundBlur_160_250"

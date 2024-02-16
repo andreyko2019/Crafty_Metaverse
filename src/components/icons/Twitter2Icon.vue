@@ -13,6 +13,7 @@
         fill-opacity="0.7"
         shape-rendering="crispEdges"
       />
+
       <path
         d="M37.2845 58.6615C31.8154 58.6615 27.3489 54.848 25.6012 49.7012C27.4285 49.9081 29.2331 49.5124 30.9421 49.1377L30.9916 49.1269L31.0248 48.1585C25.4882 46.5401 21.3334 41.0154 21.0054 34.9423C22.7676 35.7046 24.6167 36.4231 26.4845 36.4231H27.9341L26.7927 35.5294C21.5694 31.4397 19.5863 23.7905 22.5742 17.5514C29.4173 26.0688 38.9479 31.603 49.6642 32.038L50.3173 32.0646L50.172 31.4273C48.233 22.9256 54.4505 14.5 62.4845 14.5C65.9299 14.5 69.4 16.1839 71.7151 18.7216L71.9214 18.9477L72.2166 18.8668C74.9374 18.1212 77.4293 17.3617 79.6407 16.035C78.7176 18.7783 76.9621 20.8779 74.6191 22.3455L74.9619 23.2632C77.2083 22.9114 79.248 22.5536 81.2497 21.7227C79.7359 24.1237 77.7128 26.1703 75.4191 27.607L75.1736 27.7608L75.1849 28.0502C75.978 48.4802 62.505 70.5 38.4845 70.5C32.088 70.5 25.9943 68.3871 20.4929 65.0941C26.7882 65.3532 33.1816 63.1819 37.602 59.5478L38.68 58.6615H37.2845Z"
         stroke="white"
@@ -20,6 +21,7 @@
         shape-rendering="crispEdges"
       />
     </g>
+
     <defs>
       <filter
         id="filter0_d_1_1174"
@@ -31,24 +33,31 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
           result="hardAlpha"
         />
+
         <feOffset dy="4" />
+
         <feGaussianBlur stdDeviation="9" />
+
         <feComposite in2="hardAlpha" operator="out" />
+
         <feColorMatrix
           type="matrix"
           values="0 0 0 0 0.254902 0 0 0 0 0.776471 0 0 0 0 1 0 0 0 0.7 0"
         />
+
         <feBlend
           mode="normal"
           in2="BackgroundImageFix"
           result="effect1_dropShadow_1_1174"
         />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"

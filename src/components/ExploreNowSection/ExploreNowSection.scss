@@ -1,4 +1,5 @@
 @import '@/scss/base/mixins.scss';
+@import '@/scss/base/vars.scss';
 
 .explore-now-section {
   padding-top: 457px;
@@ -25,10 +26,7 @@
     margin-right: auto;
     backdrop-filter: blur(15px);
     position: relative;
-    padding-left: 91px;
-    padding-top: 95px;
-    padding-bottom: 113px;
-    padding-right: 20%;
+    padding: 95px 20% 113px 91px;
     height: fit-content;
     display: grid;
     grid-template:
@@ -76,7 +74,7 @@
 
     &-title {
       grid-area: title;
-      color: white;
+      color: $white;
       font-family: 'HeliosExtC';
       font-size: 45px;
       font-weight: 700;
@@ -90,7 +88,7 @@
 
     &-description,
     &-description-2 {
-      color: rgba(255, 255, 255, 0.9);
+      color: rgba($color: $white, $alpha: 0.9);
       font-family: 'PlusJakartaSans';
       font-size: 20px;
       font-weight: 400;
@@ -144,8 +142,8 @@
       width: 6px;
       height: 100%;
       border-radius: 41px;
-      background: #7f5cff;
-      box-shadow: 0px 0px 17px 0px rgba(191, 58, 255, 0.4);
+      background: $vividPurple;
+      box-shadow: 0 0 17px 0 rgba($color: $brightPurple, $alpha: 0.4);
 
       @include media-breakpoint-down(sm) {
         width: 100%;

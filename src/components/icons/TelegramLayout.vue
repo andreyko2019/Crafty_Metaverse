@@ -12,6 +12,7 @@
         fill="#E3A7FF"
       />
     </g>
+
     <defs>
       <filter
         id="filter0_df_160_248"

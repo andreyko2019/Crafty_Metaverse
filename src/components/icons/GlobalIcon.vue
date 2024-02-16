@@ -7,6 +7,7 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     />
+
     <path
       d="M14.6667 5.5H16.5C12.925 16.2067 12.925 27.7933 16.5 38.5H14.6667"
       stroke="white"
@@ -14,6 +15,7 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     />
+
     <path
       d="M27.5002 5.5C31.0752 16.2067 31.0752 27.7933 27.5002 38.5"
       stroke="white"
@@ -21,6 +23,7 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     />
+
     <path
       d="M5.50024 29.3333V27.5C16.2069 31.075 27.7936 31.075 38.5002 27.5V29.3333"
       stroke="white"
@@ -28,6 +31,7 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     />
+
     <path
       d="M5.50024 16.5006C16.2069 12.9256 27.7936 12.9256 38.5002 16.5006"
       stroke="white"

@@ -21,6 +21,7 @@
         "
       />
     </g>
+
     <g style="mix-blend-mode: color-dodge" filter="url(#filter1_f_1_1541)">
       <ellipse
         cx="320.986"
@@ -35,6 +36,7 @@
         "
       />
     </g>
+
     <g
       style="mix-blend-mode: lighten"
       opacity="0.5"
@@ -54,6 +56,7 @@
         "
       />
     </g>
+
     <g
       style="mix-blend-mode: color-dodge"
       opacity="0.4"
@@ -73,6 +76,7 @@
         "
       />
     </g>
+
     <g
       style="mix-blend-mode: color-dodge"
       opacity="0.4"
@@ -88,6 +92,7 @@
         style="fill: white; fill-opacity: 1"
       />
     </g>
+
     <g style="mix-blend-mode: color-dodge" filter="url(#filter5_b_1_1541)">
       <circle
         cx="320.986"
@@ -98,6 +103,7 @@
         fill-opacity="0.1"
         style="fill: white; fill-opacity: 0.1"
       />
+
       <circle
         cx="320.986"
         cy="277.47"
@@ -107,6 +113,7 @@
         style=""
       />
     </g>
+
     <g style="mix-blend-mode: color-dodge" filter="url(#filter6_b_1_1541)">
       <circle
         cx="320.986"
@@ -117,6 +124,7 @@
         fill-opacity="0.1"
         style="fill: white; fill-opacity: 0.1"
       />
+
       <circle
         cx="320.986"
         cy="277.47"
@@ -126,6 +134,7 @@
         style=""
       />
     </g>
+
     <g style="mix-blend-mode: color-dodge" filter="url(#filter7_b_1_1541)">
       <circle
         cx="320.986"
@@ -136,6 +145,7 @@
         fill-opacity="0.1"
         style="fill: white; fill-opacity: 0.1"
       />
+
       <circle
         cx="320.986"
         cy="277.47"
@@ -145,6 +155,7 @@
         style=""
       />
     </g>
+
     <g style="mix-blend-mode: color-dodge" filter="url(#filter8_b_1_1541)">
       <circle
         cx="320.986"
@@ -155,6 +166,7 @@
         fill-opacity="0.1"
         style="fill: white; fill-opacity: 0.1"
       />
+
       <circle
         cx="320.986"
         cy="277.47"
@@ -164,6 +176,7 @@
         style=""
       />
     </g>
+
     <g style="mix-blend-mode: soft-light" filter="url(#filter9_f_1_1541)">
       <ellipse
         cx="321.986"
@@ -179,6 +192,7 @@
         "
       />
     </g>
+
     <g style="mix-blend-mode: color-dodge" filter="url(#filter10_f_1_1541)">
       <ellipse
         cx="321.986"
@@ -193,6 +207,7 @@
         "
       />
     </g>
+
     <g
       style="mix-blend-mode: lighten"
       opacity="0.5"
@@ -212,6 +227,7 @@
         "
       />
     </g>
+
     <g
       style="mix-blend-mode: color-dodge"
       opacity="0.4"
@@ -231,6 +247,7 @@
         "
       />
     </g>
+
     <g
       style="mix-blend-mode: color-dodge"
       opacity="0.4"
@@ -246,6 +263,7 @@
         style="fill: white; fill-opacity: 1"
       />
     </g>
+
     <g style="mix-blend-mode: color-dodge" filter="url(#filter14_b_1_1541)">
       <circle
         cx="321.986"
@@ -256,6 +274,7 @@
         fill-opacity="0.1"
         style="fill: white; fill-opacity: 0.1"
       />
+
       <circle
         cx="321.986"
         cy="276.986"
@@ -265,6 +284,7 @@
         style=""
       />
     </g>
+
     <g style="mix-blend-mode: color-dodge" filter="url(#filter15_b_1_1541)">
       <circle
         cx="321.986"
@@ -275,6 +295,7 @@
         fill-opacity="0.1"
         style="fill: white; fill-opacity: 0.1"
       />
+
       <circle
         cx="321.986"
         cy="276.985"
@@ -284,6 +305,7 @@
         style=""
       />
     </g>
+
     <g style="mix-blend-mode: color-dodge" filter="url(#filter16_b_1_1541)">
       <ellipse
         cx="322.5"
@@ -295,12 +317,14 @@
         fill-opacity="0.1"
         style="fill: white; fill-opacity: 0.1"
       />
+
       <path
         d="M322.5 314.016C301.507 314.016 284.5 297.22 284.5 276.516C284.5 255.811 301.507 239.016 322.5 239.016C343.493 239.016 360.5 255.811 360.5 276.516C360.5 297.22 343.493 314.016 322.5 314.016Z"
         stroke="url(#paint6_linear_1_1541)"
         style=""
       />
     </g>
+
     <g style="mix-blend-mode: color-dodge" filter="url(#filter17_b_1_1541)">
       <ellipse
         cx="323"
@@ -312,12 +336,14 @@
         fill-opacity="0.1"
         style="fill: white; fill-opacity: 0.1"
       />
+
       <path
         d="M323 300.016C309.469 300.016 298.5 289.047 298.5 275.516C298.5 261.985 309.469 251.016 323 251.016C336.531 251.016 347.5 261.985 347.5 275.516C347.5 289.047 336.531 300.016 323 300.016Z"
         stroke="url(#paint7_linear_1_1541)"
         style=""
       />
     </g>
+
     <defs>
       <filter
         id="filter0_f_1_1541"
@@ -329,17 +355,20 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
           in2="BackgroundImageFix"
           result="shape"
         />
+
         <feGaussianBlur
           stdDeviation="100"
           result="effect1_foregroundBlur_1_1541"
         />
       </filter>
+
       <filter
         id="filter1_f_1_1541"
         x="0.706055"
@@ -350,17 +379,20 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
           in2="BackgroundImageFix"
           result="shape"
         />
+
         <feGaussianBlur
           stdDeviation="140"
           result="effect1_foregroundBlur_1_1541"
         />
       </filter>
+
       <filter
         id="filter2_f_1_1541"
         x="96.5976"
@@ -371,17 +403,20 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
           in2="BackgroundImageFix"
           result="shape"
         />
+
         <feGaussianBlur
           stdDeviation="100"
           result="effect1_foregroundBlur_1_1541"
         />
       </filter>
+
       <filter
         id="filter3_f_1_1541"
         x="72.9859"
@@ -392,17 +427,20 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
           in2="BackgroundImageFix"
           result="shape"
         />
+
         <feGaussianBlur
           stdDeviation="100"
           result="effect1_foregroundBlur_1_1541"
         />
       </filter>
+
       <filter
         id="filter4_f_1_1541"
         x="111.508"
@@ -413,17 +451,20 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
           in2="BackgroundImageFix"
           result="shape"
         />
+
         <feGaussianBlur
           stdDeviation="100"
           result="effect1_foregroundBlur_1_1541"
         />
       </filter>
+
       <filter
         id="filter5_b_1_1541"
         x="217"
@@ -434,12 +475,15 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feGaussianBlur in="BackgroundImageFix" stdDeviation="18.5" />
+
         <feComposite
           in2="SourceAlpha"
           operator="in"
           result="effect1_backgroundBlur_1_1541"
         />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -447,6 +491,7 @@
           result="shape"
         />
       </filter>
+
       <filter
         id="filter6_b_1_1541"
         x="230.282"
@@ -457,12 +502,15 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feGaussianBlur in="BackgroundImageFix" stdDeviation="18.5" />
+
         <feComposite
           in2="SourceAlpha"
           operator="in"
           result="effect1_backgroundBlur_1_1541"
         />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -470,6 +518,7 @@
           result="shape"
         />
       </filter>
+
       <filter
         id="filter7_b_1_1541"
         x="242.023"
@@ -480,12 +529,15 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feGaussianBlur in="BackgroundImageFix" stdDeviation="18.5" />
+
         <feComposite
           in2="SourceAlpha"
           operator="in"
           result="effect1_backgroundBlur_1_1541"
         />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -493,6 +545,7 @@
           result="shape"
         />
       </filter>
+
       <filter
         id="filter8_b_1_1541"
         x="252.841"
@@ -503,12 +556,15 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feGaussianBlur in="BackgroundImageFix" stdDeviation="18.5" />
+
         <feComposite
           in2="SourceAlpha"
           operator="in"
           result="effect1_backgroundBlur_1_1541"
         />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -516,6 +572,7 @@
           result="shape"
         />
       </filter>
+
       <filter
         id="filter9_f_1_1541"
         x="79.0668"
@@ -526,17 +583,20 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
           in2="BackgroundImageFix"
           result="shape"
         />
+
         <feGaussianBlur
           stdDeviation="100"
           result="effect1_foregroundBlur_1_1541"
         />
       </filter>
+
       <filter
         id="filter10_f_1_1541"
         x="1.70605"
@@ -547,17 +607,20 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
           in2="BackgroundImageFix"
           result="shape"
         />
+
         <feGaussianBlur
           stdDeviation="140"
           result="effect1_foregroundBlur_1_1541"
         />
       </filter>
+
       <filter
         id="filter11_f_1_1541"
         x="97.5977"
@@ -568,17 +631,20 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
           in2="BackgroundImageFix"
           result="shape"
         />
+
         <feGaussianBlur
           stdDeviation="100"
           result="effect1_foregroundBlur_1_1541"
         />
       </filter>
+
       <filter
         id="filter12_f_1_1541"
         x="81.9859"
@@ -589,17 +655,20 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
           in2="BackgroundImageFix"
           result="shape"
         />
+
         <feGaussianBlur
           stdDeviation="100"
           result="effect1_foregroundBlur_1_1541"
         />
       </filter>
+
       <filter
         id="filter13_f_1_1541"
         x="112.508"
@@ -610,17 +679,20 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
           in2="BackgroundImageFix"
           result="shape"
         />
+
         <feGaussianBlur
           stdDeviation="100"
           result="effect1_foregroundBlur_1_1541"
         />
       </filter>
+
       <filter
         id="filter14_b_1_1541"
         x="218"
@@ -631,12 +703,15 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feGaussianBlur in="BackgroundImageFix" stdDeviation="18.5" />
+
         <feComposite
           in2="SourceAlpha"
           operator="in"
           result="effect1_backgroundBlur_1_1541"
         />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -644,6 +719,7 @@
           result="shape"
         />
       </filter>
+
       <filter
         id="filter15_b_1_1541"
         x="231.282"
@@ -654,12 +730,15 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feGaussianBlur in="BackgroundImageFix" stdDeviation="18.5" />
+
         <feComposite
           in2="SourceAlpha"
           operator="in"
           result="effect1_backgroundBlur_1_1541"
         />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -667,6 +746,7 @@
           result="shape"
         />
       </filter>
+
       <filter
         id="filter16_b_1_1541"
         x="247"
@@ -677,12 +757,15 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feGaussianBlur in="BackgroundImageFix" stdDeviation="18.5" />
+
         <feComposite
           in2="SourceAlpha"
           operator="in"
           result="effect1_backgroundBlur_1_1541"
         />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -690,6 +773,7 @@
           result="shape"
         />
       </filter>
+
       <filter
         id="filter17_b_1_1541"
         x="261"
@@ -700,12 +784,15 @@
         color-interpolation-filters="sRGB"
       >
         <feFlood flood-opacity="0" result="BackgroundImageFix" />
+
         <feGaussianBlur in="BackgroundImageFix" stdDeviation="18.5" />
+
         <feComposite
           in2="SourceAlpha"
           operator="in"
           result="effect1_backgroundBlur_1_1541"
         />
+
         <feBlend
           mode="normal"
           in="SourceGraphic"
@@ -713,6 +800,7 @@
           result="shape"
         />
       </filter>
+
       <linearGradient
         id="paint0_linear_1_1541"
         x1="320.986"
@@ -726,6 +814,7 @@
           stop-opacity="0.72"
           style="stop-color: white; stop-opacity: 0.72"
         />
+
         <stop
           offset="1"
           stop-color="white"
@@ -733,6 +822,7 @@
           style="stop-color: none; stop-opacity: 0"
         />
       </linearGradient>
+
       <linearGradient
         id="paint1_linear_1_1541"
         x1="320.986"
@@ -746,6 +836,7 @@
           stop-opacity="0.72"
           style="stop-color: white; stop-opacity: 0.72"
         />
+
         <stop
           offset="1"
           stop-color="white"
@@ -753,6 +844,7 @@
           style="stop-color: none; stop-opacity: 0"
         />
       </linearGradient>
+
       <linearGradient
         id="paint2_linear_1_1541"
         x1="320.986"
@@ -766,6 +858,7 @@
           stop-opacity="0.72"
           style="stop-color: white; stop-opacity: 0.72"
         />
+
         <stop
           offset="1"
           stop-color="white"
@@ -773,6 +866,7 @@
           style="stop-color: none; stop-opacity: 0"
         />
       </linearGradient>
+
       <linearGradient
         id="paint3_linear_1_1541"
         x1="320.986"
@@ -786,6 +880,7 @@
           stop-opacity="0.72"
           style="stop-color: white; stop-opacity: 0.72"
         />
+
         <stop
           offset="1"
           stop-color="white"
@@ -793,6 +888,7 @@
           style="stop-color: none; stop-opacity: 0"
         />
       </linearGradient>
+
       <linearGradient
         id="paint4_linear_1_1541"
         x1="321.986"
@@ -806,6 +902,7 @@
           stop-opacity="0.72"
           style="stop-color: white; stop-opacity: 0.72"
         />
+
         <stop
           offset="1"
           stop-color="white"
@@ -813,6 +910,7 @@
           style="stop-color: none; stop-opacity: 0"
         />
       </linearGradient>
+
       <linearGradient
         id="paint5_linear_1_1541"
         x1="321.986"
@@ -826,6 +924,7 @@
           stop-opacity="0.72"
           style="stop-color: white; stop-opacity: 0.72"
         />
+
         <stop
           offset="1"
           stop-color="white"
@@ -833,6 +932,7 @@
           style="stop-color: none; stop-opacity: 0"
         />
       </linearGradient>
+
       <linearGradient
         id="paint6_linear_1_1541"
         x1="361"
@@ -846,6 +946,7 @@
           stop-opacity="0.72"
           style="stop-color: white; stop-opacity: 0.72"
         />
+
         <stop
           offset="1"
           stop-color="white"
@@ -853,6 +954,7 @@
           style="stop-color: none; stop-opacity: 0"
         />
       </linearGradient>
+
       <linearGradient
         id="paint7_linear_1_1541"
         x1="348"
@@ -866,6 +968,7 @@
           stop-opacity="0.72"
           style="stop-color: white; stop-opacity: 0.72"
         />
+
         <stop
           offset="1"
           stop-color="white"

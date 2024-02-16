@@ -12,6 +12,7 @@
       stroke="white"
       stroke-width="0.4"
     />
+
     <path
       opacity="0.1"
       d="M6 12.0469L12 6.04688L18 12.0469L12 18.0469L6 12.0469Z"

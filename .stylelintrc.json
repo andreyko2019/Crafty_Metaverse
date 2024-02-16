@@ -1,3 +1,15 @@
 {
-  "extends": "stylelint-config-standard"
+  "extends": ["stylelint-config-recommended-vue", "stylelint-config-prettier"],
+  "processors": ["stylelint-processor-html"],
+  "rules": {
+    "no-empty-source": null,
+    "at-rule-no-unknown": null,
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
+      }
+    ]
+  }
 }

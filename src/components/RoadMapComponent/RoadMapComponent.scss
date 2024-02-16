@@ -109,6 +109,7 @@
     width: fit-content;
     max-width: 600px;
     padding-top: 30px;
+
     &-title {
       max-width: 370px;
       color: #fff;
@@ -127,6 +128,7 @@
       }
     }
   }
+
   &__list {
     margin-top: 21px;
 
@@ -176,6 +178,7 @@
       position: relative;
       padding-left: 20px;
       color: rgba($color: #fff, $alpha: 0.8);
+
       &::before {
         content: '';
         position: absolute;

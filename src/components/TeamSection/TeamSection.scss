@@ -51,6 +51,7 @@
 
     &-user {
       height: fit-content;
+
       &:first-child {
         @include media-breakpoint-up(sm) {
           padding-top: 56px;
@@ -131,6 +132,7 @@
         from {
           opacity: 0;
         }
+
         to {
           opacity: 1;
         }

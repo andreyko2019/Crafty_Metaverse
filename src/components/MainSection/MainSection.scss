@@ -4,7 +4,6 @@
 .main-section {
   padding-top: 274px;
   padding-bottom: 263px;
-  min-height: max-height;
   position: relative;
   scroll-snap-align: start;
   scroll-snap-type: y mandatory;
@@ -28,13 +27,14 @@
     margin-right: -8px;
     width: 100%;
     height: 100%;
+
     &-icon {
       top: 9px;
       left: -8px;
       position: relative;
       width: 46px;
       height: 46px;
-      fill: #fff;
+      fill: $white;
     }
 
     &.main-section__star-2 {
@@ -137,7 +137,6 @@
       color: #fff;
       font-family: 'HeliosExtC';
       font-size: 18px;
-      font-style: normal;
       font-weight: 900;
       line-height: 1.45;
       padding-left: 49px;

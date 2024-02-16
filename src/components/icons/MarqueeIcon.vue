@@ -15,10 +15,12 @@
       stroke="url(#paint0_linear_1_899)"
       stroke-opacity="0.2"
     />
+
     <path
       d="M23.0001 0L26.2528 19.7473L46.0001 23L26.2528 26.2527L23.0001 46L19.7474 26.2527L9.52777e-05 23L19.7474 19.7473L23.0001 0Z"
       fill="white"
     />
+
     <defs>
       <linearGradient
         id="paint0_linear_1_899"
@@ -29,6 +31,7 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="white" />
+
         <stop offset="1" stop-color="white" stop-opacity="0" />
       </linearGradient>
     </defs>

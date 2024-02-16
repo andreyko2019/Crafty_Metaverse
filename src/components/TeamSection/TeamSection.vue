@@ -5,6 +5,7 @@
       src="@/assets/images/TeamSection/background.png"
       alt=""
     />
+
     <div class="team-section__container">
       <div class="team-section__blur">
         <img
@@ -13,6 +14,7 @@
           alt="Blur"
         />
       </div>
+
       <div class="team-section__blur">
         <img
           src="@/assets/images/TeamSection/blur-2.webp"
@@ -20,6 +22,7 @@
           alt="Blur"
         />
       </div>
+
       <div class="team-section__blur">
         <img
           src="@/assets/images/TeamSection/blur-3.webp"
@@ -27,7 +30,9 @@
           alt="Blur"
         />
       </div>
+
       <SectionTitle title="Our Team" titleDescription="WHO WE ARE" />
+
       <div class="team-section__team">
         <TeamUser
           class="team-section__team-user"
@@ -39,6 +44,7 @@
           instagramLink="https://crafty-metaverse.netlify.app/"
           linkedinLink="https://crafty-metaverse.netlify.app/"
         />
+
         <TeamUser
           class="team-section__team-user"
           position="Chief Financial Officer"
@@ -49,6 +55,7 @@
           instagramLink="https://crafty-metaverse.netlify.app/"
           linkedinLink="https://crafty-metaverse.netlify.app/"
         />
+
         <TeamUser
           class="team-section__team-user"
           position="COO/Marketing Director"
@@ -59,6 +66,7 @@
           instagramLink="https://crafty-metaverse.netlify.app/"
           linkedinLink="https://crafty-metaverse.netlify.app/"
         />
+
         <TeamUser
           class="team-section__team-user"
           position="CEO/Developer"
@@ -75,18 +83,18 @@
 </template>
 
 <script setup>
-import SectionTitle from '@/components/SectionTitle.vue';
-import TeamUser from '@/components/TeamUser.vue';
-import User1 from '@/assets/images/TeamSection/User1.webp';
-import User2 from '@/assets/images/TeamSection/User2.webp';
-import User3 from '@/assets/images/TeamSection/User3.webp';
-import User4 from '@/assets/images/TeamSection/User4.webp';
-const props = defineProps({
-  titleDescription: String,
-  title: String,
-});
+  import SectionTitle from '@/components/SectionTitle.vue'
+  import TeamUser from '@/components/TeamUser.vue'
+  import User1 from '@/assets/images/TeamSection/User1.webp'
+  import User2 from '@/assets/images/TeamSection/User2.webp'
+  import User3 from '@/assets/images/TeamSection/User3.webp'
+  import User4 from '@/assets/images/TeamSection/User4.webp'
+  defineProps({
+    titleDescription: String,
+    title: String,
+  })
 </script>
 
 <style>
-@import './TeamSection.scss';
+  @import url('./TeamSection.scss');
 </style>

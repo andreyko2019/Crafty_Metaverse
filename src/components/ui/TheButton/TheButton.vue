@@ -5,9 +5,9 @@
 </template>
 
 <script setup>
-const props = defineProps({ text: String });
+  defineProps({ text: String })
 </script>
 
-<style>
-@import './TheButton.scss';
+<style lang="scss">
+  @import './TheButton.scss';
 </style>
